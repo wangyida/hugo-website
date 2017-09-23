@@ -1,6 +1,6 @@
 baseurl = "https://wangyida.github.io/"  # End your URL with a `/` trailing slash.
-title = "Academic"
-copyright = "&copy; 2016 Your Name"
+title = "Yida Wang's personal website"
+copyright = "&copy; 2016 Yida Wang"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -19,17 +19,17 @@ defaultContentLanguageInSubdir = false
   hrefTargetBlank = true
 
 [params]
-  name = "Lena Smith"
-  role = "Professor of Artificial Intelligence"
-  organization = "Stanford University"
-  organization_url = ""
+  name = "Yida Wang"
+  role = "Ph.D Student in Machine Learning and Computer Vision"
+  organization = "Technical University of Munich"
+  organization_url = "https://www.tum.de/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
-  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  phone = "888 888 88 88"
-  skype = "echo123"
+  avatar = "Photo_lab.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "yidawang.cn@gmail.com"
+  address = "Lillweg 13, Munich, Bavaria, Deutscheland"
+  office_hours = "Monday to Friday 9:00 to 17:00 or email for appointment"
+  phone = "+49 15143681357"
+  skype = "wangyida123@outlook.com"
   telegram = ""
 
   # Enable Keybase in Contact section by entering your keybase.io username.
@@ -126,22 +126,22 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
+    link = "yidawang.cn@gmail.com"
 
   [[params.social]]
-    icon = "twitter"
+    icon = "facebook"
     icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
+    link = "https://www.facebook.com/yida.wang.0123"
 
   [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    link = "https://scholar.google.de/citations?user=HpfFgYIAAAAJ&hl=en"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/gcushen"
+    link = "//github.com/wangyida"
 
 
 # Navigation Links
