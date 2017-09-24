@@ -43,4 +43,4 @@ I am Ph.D student of Chair for Computer Aided Medical Procedures & Augmented Rea
 
 I get my master degree in PRIS Lab from [Beijing University of Posts and Telecommunications](http://www.bupt.edu.cn/), supervised by Dr. [Weihong Deng](http://www.pris.net.cn/introduction/teacher/dengweihong). I spent two years doing research on biometic information analysis and 3D vision tasks.
 
-Download my CV in: {{% staticref "files/resume_YidaWang.pdf" %}}English{{% /staticref %}}, {{% staticref "files/王一达简历" %}}中文{{% /staticref %}} and {{% staticref "files/fortsetzen_YidaWang.pdf" %}}Deutsche{{% /staticref %}}
+Download my CV in: {{% staticref "files/resume_YidaWang.pdf" %}}English{{% /staticref %}}, {{% staticref "files/王一达简历.pdf" %}}中文{{% /staticref %}} and {{% staticref "files/fortsetzen_YidaWang.pdf" %}}Deutsche{{% /staticref %}}
