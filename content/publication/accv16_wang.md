@@ -10,6 +10,7 @@ publication = "In *Asian Conference on Computer Vision (ACCV 2016)*, Springer."
 publication_short = "In *ACCV*"
 selected = true 
 title = "ZigzagNet: Efficient Deep Learning for Real Object Recognition Based on 3D Models"
+tags = ["deep-learning", "compact-network", "metric-learning", "computer-vision"]
 url_code = ""
 url_dataset = ""
 url_pdf = "https://www.researchgate.net/publication/314635459_ZigzagNet_Efficient_Deep_Learning_for_Real_Object_Recognition_Based_on_3D_Models"
@@ -19,6 +20,6 @@ url_video = ""
 
 +++
 
-![paperArch-eps-converted-to](paperArch-eps-converted-to.svg)
-![micro_ours-eps-converted-to](micro_ours-eps-converted-to.svg)
+![paperArch-eps-converted-to](/img/paperArch-eps-converted-to.svg)
+![micro_ours-eps-converted-to](/img/micro_ours-eps-converted-to.svg)
 More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

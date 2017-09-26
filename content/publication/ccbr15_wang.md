@@ -10,6 +10,7 @@ publication = "In Chinese Conference on Biometric Recognition *(CCBR)*, Springer
 publication_short = "In *CCBR*"
 selected = true
 title = "Face Recognition Using Local PCA Filters"
+tags = ["deep-alternatives", "computer-vision"]
 url_code = "https://github.com/wangyida/PCANet"
 url_dataset = "http://vis-www.cs.umass.edu/lfw/"
 url_pdf = "https://www.researchgate.net/publication/291692599_Face_Recognition_Using_Local_PCA_Filters"
@@ -18,7 +19,6 @@ url_slides = ""
 url_video = ""
 
 +++
-![StandAloneNet](static/img/StandAloneNet.svg)
-![filterFFT](static/img/filterFFT.svg)
+![StandAloneNet](/img/StandAloneNet.svg)
+![filterFFT](/img/filterFFT.svg)
 
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

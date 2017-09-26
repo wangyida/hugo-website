@@ -10,6 +10,7 @@ publication = "In *Image Processing (ICIP)*, IEEE."
 publication_short = "In *ICIP*"
 selected = true
 title = "Self-restraint object recognition by model based CNN learning"
+tags = ["deep-learning", "computer-vision"]
 url_code = ""
 url_dataset = ""
 url_pdf = "https://www.researchgate.net/publication/307515952_Self-restraint_object_recognition_by_model_based_CNN_learning"
@@ -19,7 +20,7 @@ url_video = ""
 
 +++
 
-![objectrec](objectrec.svg)
-![reconstruction](reconstruction.svg)
-![recon_real-eps-converted-to](recon_real-eps-converted-to.svg)
+![objectrec](/img/objectrec.svg)
+![reconstruction](/img/reconstruction.svg)
+![recon_real-eps-converted-to](/img/recon_real-eps-converted-to.svg)
 More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.

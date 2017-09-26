@@ -1,6 +1,6 @@
 baseurl = "https://wangyida.github.io/"  # End your URL with a `/` trailing slash.
-title = "Yida Wang's personal website"
-copyright = "&copy; 2016 Yida Wang"
+title = "Yida Wang"
+copyright = "&copy; 2017 Yida Wang"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -20,8 +20,8 @@ defaultContentLanguageInSubdir = false
 
 [params]
   name = "Yida Wang"
-  role = "Ph.D Student in Machine Learning and Computer Vision"
-  organization = "Technical University of Munich"
+  role = "Ph.D Student for Machine Learning and Computer Vision"
+  organization = "Technische Universität München"
   organization_url = "https://www.tum.de/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "Photo_lab.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
@@ -37,7 +37,7 @@ defaultContentLanguageInSubdir = false
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Jan 2, 2006"
+  date_format = "Jan 23, 2017"
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.

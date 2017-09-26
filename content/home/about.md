@@ -39,8 +39,10 @@ weight = 1
 
 # Biography
 
-I am Ph.D student of Chair for Computer Aided Medical Procedures & Augmented Reality ([Lehrstuhl für Informatikanwendungen in der Medizin & Augmented Reality](http://campar.in.tum.de/WebHome)), [Fakultät für Informatik](http://www.in.tum.de/) in [Technische Universität München](https://www.tum.de/). Currently co-supervised by Dr. [Federico Tombari](http://campar.in.tum.de/Main/FedericoTombari) and Prof. Dr. [Nassir Navab](http://campar.in.tum.de/Main/NassirNavabCv). My topic is development of deep learning techniques for representation and processing of 3D data for complex visual tasks.
+I am Ph.D student of [Chair for Computer Aided Medical Procedures & Augmented Reality](http://campar.in.tum.de/WebHome), [Fakultät für Informatik](http://www.in.tum.de) in [Technische Universität München](https://www.tum.de/). Currently co-supervised by Dr. [Federico Tombari](http://campar.in.tum.de/Main/FedericoTombari) and Prof. Dr. [Nassir Navab](http://campar.in.tum.de/Main/NassirNavab). My topic is development of deep learning techniques for representation and processing of 3D data for complex visual tasks.
 
-I get my master degree in PRIS Lab from [Beijing University of Posts and Telecommunications](http://www.bupt.edu.cn/), supervised by Dr. [Weihong Deng](http://www.pris.net.cn/introduction/teacher/dengweihong). I spent two years doing research on biometic information analysis and 3D vision tasks.
+Previously I got master degree in Pattern Recognition and Intelligent System Laboratory from [Beijing University of Posts and Telecommunications](http://www.bupt.edu.cn/), supervised by Dr. [Weihong Deng](http://www.whdeng.cn/). I spent two years doing research on biometic information analysis and 3D vision tasks.
+
+Several academic projects are ever sponsored by Microsoft and Google open source funding, two Google Summer of Codes projects are supervised by mentors in OpenCV which is [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D object pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj).
 
 Download my CV in: {{% staticref "files/resume_YidaWang.pdf" %}}English{{% /staticref %}}, {{% staticref "files/王一达简历.pdf" %}}中文{{% /staticref %}} and {{% staticref "files/fortsetzen_YidaWang.pdf" %}}Deutsche{{% /staticref %}}

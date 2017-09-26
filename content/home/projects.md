@@ -32,6 +32,26 @@ filter_default = 0
 [[filter]]
   name = "Deep Learning"
   tag = ".deep-learning"
+  
+[[filter]]
+  name = "Computer Vision"
+  tag = ".computer-vision"
+
+[[filter]]
+  name = "Deep Alternatives"
+  tag = ".deep-alternatives"
+
+[[filter]]
+  name = "Variational Inference"
+  tag = ".variational-inference"
+
+[[filter]]
+  name = "Compact Network"
+  tag = ".compact-network"
+
+[[filter]]
+  name = "Metric Learning"
+  tag = ".metric-learning"
 
 [[filter]]
   name = "Other"

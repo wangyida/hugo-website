@@ -10,6 +10,7 @@ publication = "In *Image Processing (TIP) peer review*, IEEE."
 publication_short = "TIP peer review"
 selected = true
 title = "Generative Model with Coordinate Metric Learning for Object Recognition Based on 3D Models"
+tags = ["deep-learning", "variational-inference", "computer-vision"]
 url_code = "https://github.com/wangyida/gm-cml"
 url_dataset = "https://shapenet.cs.stanford.edu/"
 url_pdf = "https://arxiv.org/pdf/1705.08590.pdf"
@@ -18,8 +19,12 @@ url_slides = ""
 url_video = ""
 
 +++
+input | target | manifold 
+:----:|:----:|:----: 
+![test_xs](/img/test_xs.png) | ![test_ts](/img/test_ts.png) | ![manifold_latest](/img/manifold_latest.png) 
 
-![pipeline_tip](pipeline_tip.svg)
-![imganalysis](imganalysis.svg)
-![triplet_samples](triplet_samples.svg)
+![pipeline_tip](/img/pipeline_tip.svg)
+![imganalysis](/img/imganalysis.svg)
+![triplet_samples](/img/triplet_samples.svg)
+![show.gif](/img/show.gif)
 More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
