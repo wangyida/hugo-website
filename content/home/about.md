@@ -16,12 +16,14 @@ weight = 1
     "Computer Vision",
     "Augmented Reality",
     "Statistics",
-    "Tensor Calculus"
+    "Tensor Calculus",
+    "Open Source",
+    "Telecommunication"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Ph.D student in CAMPAR CV group"
+  course = "Ph.D student in CAMP CV group"
   institution = "Technische Universität München"
   year = 2017
 

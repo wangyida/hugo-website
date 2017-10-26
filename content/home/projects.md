@@ -30,6 +30,10 @@ filter_default = 0
   tag = "*"
   
 [[filter]]
+  name = "Open Source"
+  tag = ".open-source"
+  
+[[filter]]
   name = "Deep Learning"
   tag = ".deep-learning"
   
@@ -52,6 +56,10 @@ filter_default = 0
 [[filter]]
   name = "Metric Learning"
   tag = ".metric-learning"
+
+[[filter]]
+  name = "Telecommunication"
+  tag = ".telecommunication"
 
 [[filter]]
   name = "Other"

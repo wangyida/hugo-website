@@ -22,5 +22,7 @@ url_video = ""
 
 ![objectrec](/img/objectrec.svg)
 ![reconstruction](/img/reconstruction.svg)
-![recon_real-eps-converted-to](/img/recon_real-eps-converted-to.svg)
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
+
+Synthetic | Real
+:----:|:----:
+![recon_model](/img/recon_model-eps-converted-to.svg) | ![recon_real](/img/recon_real-eps-converted-to.svg) 
