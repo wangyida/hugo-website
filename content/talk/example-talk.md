@@ -20,6 +20,7 @@ image = "headers/Microsoft-Research-Faculty-Summit-2016-official-Microsoft.jpg"
 caption = "My caption :smile:"
 
 +++
+Here is the original blog of [Microsoft research for open source challenge](Microsoft Research Blog).
 
 The Open Source Challenge did exactly what we’d hoped: the winning students — some of whom hadn’t known about the offerings available through the Open Source for Academics program at Microsoft—found the tools they needed to solve real problems. Their takeaway from the experience—in addition to the prizes and, we hope, the greatly-deserved awe of their colleagues—is that they have a new source for tools to help them with future projects, solving future problems. Others—many of whom were already using Microsoft Research open source—seized the opportunity to put their work in front of the people who appreciate it most.
 
