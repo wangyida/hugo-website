@@ -47,8 +47,8 @@ defaultContentLanguageInSubdir = false
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "Photo_lab.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "yidawang dot cn@gmail dot com"
-  address = "Lillweg 13, 80939, Munich, Bavaria, Deutscheland"
+  email = "yidawang_dot_cn@gmail_dot_com"
+  address = "Boltzmannstraße 3, 85748 Garching bei München, Bavaria, Deutscheland"
   office_hours = "Monday to Friday 9:00 to 17:00"
   phone = "+49 151-4368-1357"
   skype = "wangyida123@outlook.com"
@@ -66,8 +66,8 @@ defaultContentLanguageInSubdir = false
   #   Get your coords: Right-click place on Google Maps. Select 'What's here?'. At the bottom is a card with the coords.
   #   Disable Google Maps by clearing all three options to "".
   google_maps_api_key = "AIzaSyAIdx2m-pZnHskuEoPluHJiWmVt3o10vWo"
-  latitude = "48.1351"
-  longitude = "11.5820"
+  latitude = "48.2626"
+  longitude = "11.6683"
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
