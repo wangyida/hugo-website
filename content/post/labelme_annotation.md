@@ -159,7 +159,7 @@ Sample
 Screencast
 ----------
 
-
+<img src="https://github.com/wkentaro/labelme/raw/master/static/screencast.gif" width="70%"/>
 
 Acknowledgement
 ---------------
