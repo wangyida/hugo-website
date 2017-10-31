@@ -13,7 +13,7 @@ image = ""
 caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 
 +++
-<img src="https://github.com/wkentaro/labelme/blob/master/static/apc2016_obj3_draw_json.jp align="right" />
+<img src="https://github.com/wkentaro/labelme/blob/master/static/apc2016_obj3_draw_json.jpg?raw=true" align="right" />
 
 Labelme is a graphical image annotation tool inspired by <http://labelme.csail.mit.edu>.  
 It is written in Python and uses Qt for its graphical interface.
