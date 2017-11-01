@@ -99,7 +99,7 @@ There are a few package managers that are specific to Python, and pip is the pre
 ```bash
 curl -O http://python-distribute.org/distribute_setup.py
 python distribute_setup.py
-curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+curl -O https://bootstrap.pypa.io/get-pip.py 
 python get-pip.py
 ```
 	    
@@ -109,6 +109,7 @@ It's possible that you will run into a permission issue here. Every file on your
 
 ```bash
 brew install qt qt5 || brew install pyqt  # qt4 is deprecated
+brew link pyqt
 pip install labelme
 ```
 
