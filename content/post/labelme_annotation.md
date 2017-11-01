@@ -1,6 +1,6 @@
 +++
 date = 2017-10-29
-lastmod = 2017-10-29
+lastmod = 2017-11-01
 draft = false
 tags = ["academic", "python", "annotation"]
 title = "labelme: Image Annotation Tool with Python"
