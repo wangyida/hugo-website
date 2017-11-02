@@ -26,3 +26,11 @@ option `print0` for `find` is mean to print the full file name on the standard o
 followed by a null character (instead of the newline character that `-print` uses).  
 This allows file names that contain newlines or other types of white space to be correctly interpreted by programs that process the find output. 
 This option corresponds to the `-0` option of xargs.
+
+If you want to turn white background into a transparency one in form of `png` images, `-fuzz 2% -transparent white` should be added.
+Suppese that all images you want to trim and remove white backgrounds, the command should be something like:
+
+```bash
+find . -name '*.png' -print0 | xargs -0 -I {} convert {} -trim -fuzz 2% -transparent white {}
+```
+
