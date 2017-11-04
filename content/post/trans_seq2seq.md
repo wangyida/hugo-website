@@ -6,6 +6,7 @@ tags = ["translation", "rnn"]
 title = "Implementation on language translation based on Google TensorFlow"
 math = true
 summary = """
+Post for utilizing sequence to sequance model on language translation tasks.
 """
 
 [header]

@@ -6,6 +6,7 @@ tags = ["academic", "python", "annotation"]
 title = "labelme: Image Annotation Tool with Python"
 math = true
 summary = """
+A brief introduction on setting up image cross-platform annotation tool.
 """
 
 [header]
@@ -13,6 +14,7 @@ image = ""
 caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 
 +++
+
 <img src="https://github.com/wkentaro/labelme/blob/master/static/apc2016_obj3_draw_json.jpg?raw=true" align="right" />
 
 Labelme is a graphical image annotation tool inspired by <http://labelme.csail.mit.edu>.  
