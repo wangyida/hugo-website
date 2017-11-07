@@ -29,15 +29,14 @@ caption = "My caption :smile:"
 +++
 
 1. Google Open Source:
-
-[Google summer of Codes 2015](https://www.google-melange.com/archive/gsoc/2015/orgs/opencv/projects/wangyida.html): Deep Learning & GPU Implementation for Metric Learning for OpenCV
-[Google summer of Codes 2016](https://summerofcode.withgoogle.com/archive/2016/projects/4623962327744512/): tiny-dnn & OpenCV
+ * [Google summer of Codes 2015](https://www.google-melange.com/archive/gsoc/2015/orgs/opencv/projects/wangyida.html): Deep Learning & GPU Implementation for Metric Learning for OpenCV
+ * [Google summer of Codes 2016](https://summerofcode.withgoogle.com/archive/2016/projects/4623962327744512/): tiny-dnn & OpenCV
 
 2. Microsoft Research:
-2nd prize of [Microsoft Open Source Challenge 2016](https://www.microsoft.com/en-us/research/academic-program/microsoft-open-source-challenge/): CNTK on Mac: 2D Object Restoration and Recognition on 3D Model
+ * 2nd prize of [Microsoft Open Source Challenge 2016](https://www.microsoft.com/en-us/research/academic-program/microsoft-open-source-challenge/): CNTK on Mac: 2D Object Restoration and Recognition on 3D Model
 
 3. Scilab:
-1st prize of [Scilab Scientific Simulation Contest 2013](https://www.scilab.org/content/view/full/980): AIS System
+ * 1st prize of [Scilab Scientific Simulation Contest 2013](https://www.scilab.org/content/view/full/980): AIS System
 
 4. CSDN:
-[CSDN Summer of Codes](http://code.csdn.net/os_camp/6/proposals/6): BladeRF Personal Telecommuncation Base
+ * [CSDN Summer of Codes](http://code.csdn.net/os_camp/6/proposals/6): BladeRF Personal Telecommuncation Base

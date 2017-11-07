@@ -49,3 +49,13 @@ convert *.png +append -fuzz 2% -transparent white diff_ours.png
 ```
 
 Those command will keep all original images' own shapes and barely concatenate them in RGB space
+
+## File Transmitting 
+
+```bash
+scp -P 10639 /Users/yidawang/Documents/gitfarm/cluster-vae/list_attr_celeba.csv user@557803.iask.in:/home/user/Desktop/
+```
+
+```bash
+rsync -avz --progress -e 'ssh -p 10639' /Users/yidawang/Downloads/img_align_celeba.zip user@557803.iask.in:/home/user/Desktop/
+```
