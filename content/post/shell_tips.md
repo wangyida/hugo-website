@@ -19,6 +19,8 @@ caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic
 
 ### Trim images in batches
 
+#### Images
+
 Suppose that there are images in `tmp` folder, you can remove all margins without any effective pixel by executing:
 
 ```bash
@@ -36,6 +38,12 @@ Suppose that all images you want to trim and remove white backgrounds, the comma
 ```bash
 find . -name '*.png' -print0 | xargs -0 -I {} convert {} -trim -fuzz 2% -transparent white {}
 ```
+#### PDF files
+
+```bash
+for FILE in ./*.pdf; do pdfcrop --margins '5 5 5 5' "${FILE}"; done
+```
+
 ### Append images
 
 Vertically:

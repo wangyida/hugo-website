@@ -1,6 +1,9 @@
 +++
-date = "2016-06-01T00:00:00"
-title = "CNTK on Mac"
+date = 2016-06-01T00:00:00
+
+title = "Microsoft Research: CNTK on Mac"
+time_start = 2016-06-01T13:00:00
+time_end = 2016-06-01T15:00:00
 abstract = "The Microsoft Open Source Challenge asked students from across the world to prove their skills and solve real-world problems with Microsoft’s open source tools. Four entries were chosen to receive prizes."
 abstract_short = ""
 event = "Microsoft Faculty Summit - Microsoft Research’s 20th Anniversary"
