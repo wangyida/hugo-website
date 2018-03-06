@@ -14,6 +14,53 @@ image = ""
 caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
 
 +++
+# Mask R-CNN 用于对象检测和分割
+
+这是基于Python 3，Keras和TensorFlow上的[Mask R-CNN](https://arxiv.org/abs/1703.06870)的实现。 该模型为图像中的每个对象实例生成边界框和分割掩码。 它基于特征金字塔网络（FPN）和ResNet101主干网。
+
+![实例分割样例](mask_rcnn/street.png)
+
+源代码库包括包括：
+* 在FPN和ResNet101上构建的Mask R-CNN的源代码。
+* MS COCO的训练代码
+* MS COCO预先训练的权重
+* Jupyter-notebook可视化脚本
+* 用于多GPU并行训练
+* 评估MS COCO指标（AP）
+* 自定义数据集进行训练的例子
+
+
+该代码易于扩展。 如果您在研究和工业生产中使用它，能提高工作效率。
+
+
+
+
+## 1. 锚点排序和筛选
+可视化第一阶段候选区域网络的每一步，并显示正负锚点以及锚点框架细化。
+![](mask_rcnn/detection_anchors.png)
+
+## 2. 边界框细化
+这是第二阶段最终检测框（虚线）和应用于它们的细化（实线）的示例。
+![](mask_rcnn/detection_refinement.png)
+
+## 3. 掩模生成
+生成掩模的实例。 然后将它们缩放并放置在正确位置的图像上。
+![](mask_rcnn/detection_masks.png)
+
+## 4. 层激活
+通常检查不同层的激活来追踪不合理激活（全零或随机噪声）是有用的。
+![](mask_rcnn/detection_activations.png)
+
+## 5. 权重直方图
+![](mask_rcnn/detection_histograms.png)
+
+## 6. 将不同的部分组合成最终结果
+![](mask_rcnn/detection_final.png)
+
+
+## 更多实例
+![羊](mask_rcnn/sheep.png)
+![椰子](mask_rcnn/donuts.png)
 
 # Mask R-CNN 演示实例
 
@@ -194,7 +241,504 @@ visualize.display_instances(image, r['rois'], r['masks'], r['class_ids'],
 
 
 
-![png](mask-rcnn1/output_9_1.png)
+![png](mask_rcnn/output_9_1.png)
+
+
+# Mask R-CNN - 训练形状数据集
+
+这里展示了如何在你自己的数据集上训练Mask R-CNN。为了简单起见，我们使用了可以快速训练的形状（正方形，三角形和圆形）的综合数据集。不过，你仍然需要一个GPU，因为网络主干是一个Resnet101，这对于在CPU上训练来说太慢了。在GPU上，您可以在几分钟内开始好的结果，并在不到一个小时的时间内获得好的结果。
+
+形状数据集的代码包含在下面。它可以即时生成图像，因此不需要下载任何数据。它可以生成任何大小的图像，所以我们选择一个小图像大小来加快训练速度。
+
+
+```python
+import os
+import sys
+import random
+import math
+import re
+import time
+import numpy as np
+import cv2
+import matplotlib
+import matplotlib.pyplot as plt
+
+from config import Config
+import utils
+import model as modellib
+import visualize
+from model import log
+
+%matplotlib inline 
+
+# Root directory of the project
+ROOT_DIR = os.getcwd()
+
+# Directory to save logs and trained model
+MODEL_DIR = os.path.join(ROOT_DIR, "logs")
+
+# Local path to trained weights file
+COCO_MODEL_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
+# Download COCO trained weights from Releases if needed
+if not os.path.exists(COCO_MODEL_PATH):
+    utils.download_trained_weights(COCO_MODEL_PATH)
+```
+
+    Using TensorFlow backend.
+
+
+## 配置
+
+
+```python
+class ShapesConfig(Config):
+    """Configuration for training on the toy shapes dataset.
+    Derives from the base Config class and overrides values specific
+    to the toy shapes dataset.
+    """
+    # Give the configuration a recognizable name
+    NAME = "shapes"
+
+    # Train on 1 GPU and 8 images per GPU. We can put multiple images on each
+    # GPU because the images are small. Batch size is 8 (GPUs * images/GPU).
+    GPU_COUNT = 1
+    IMAGES_PER_GPU = 8
+
+    # Number of classes (including background)
+    NUM_CLASSES = 1 + 3  # background + 3 shapes
+
+    # Use small images for faster training. Set the limits of the small side
+    # the large side, and that determines the image shape.
+    IMAGE_MIN_DIM = 128
+    IMAGE_MAX_DIM = 128
+
+    # Use smaller anchors because our image and objects are small
+    RPN_ANCHOR_SCALES = (8, 16, 32, 64, 128)  # anchor side in pixels
+
+    # Reduce training ROIs per image because the images are small and have
+    # few objects. Aim to allow ROI sampling to pick 33% positive ROIs.
+    TRAIN_ROIS_PER_IMAGE = 32
+
+    # Use a small epoch since the data is simple
+    STEPS_PER_EPOCH = 100
+
+    # use small validation steps since the epoch is small
+    VALIDATION_STEPS = 5
+    
+config = ShapesConfig()
+config.display()
+```
+
+    
+    Configurations:
+    BACKBONE_SHAPES                [[32 32]
+     [16 16]
+     [ 8  8]
+     [ 4  4]
+     [ 2  2]]
+    BACKBONE_STRIDES               [4, 8, 16, 32, 64]
+    BATCH_SIZE                     8
+    BBOX_STD_DEV                   [ 0.1  0.1  0.2  0.2]
+    DETECTION_MAX_INSTANCES        100
+    DETECTION_MIN_CONFIDENCE       0.5
+    DETECTION_NMS_THRESHOLD        0.3
+    GPU_COUNT                      1
+    IMAGES_PER_GPU                 8
+    IMAGE_MAX_DIM                  128
+    IMAGE_MIN_DIM                  128
+    IMAGE_PADDING                  True
+    IMAGE_SHAPE                    [128 128   3]
+    LEARNING_MOMENTUM              0.9
+    LEARNING_RATE                  0.002
+    MASK_POOL_SIZE                 14
+    MASK_SHAPE                     [28, 28]
+    MAX_GT_INSTANCES               100
+    MEAN_PIXEL                     [ 123.7  116.8  103.9]
+    MINI_MASK_SHAPE                (56, 56)
+    NAME                           SHAPES
+    NUM_CLASSES                    4
+    POOL_SIZE                      7
+    POST_NMS_ROIS_INFERENCE        1000
+    POST_NMS_ROIS_TRAINING         2000
+    ROI_POSITIVE_RATIO             0.33
+    RPN_ANCHOR_RATIOS              [0.5, 1, 2]
+    RPN_ANCHOR_SCALES              (8, 16, 32, 64, 128)
+    RPN_ANCHOR_STRIDE              2
+    RPN_BBOX_STD_DEV               [ 0.1  0.1  0.2  0.2]
+    RPN_TRAIN_ANCHORS_PER_IMAGE    256
+    STEPS_PER_EPOCH                100
+    TRAIN_ROIS_PER_IMAGE           32
+    USE_MINI_MASK                  True
+    USE_RPN_ROIS                   True
+    VALIDATION_STEPS               50
+    WEIGHT_DECAY                   0.0001
+    
+    
+
+
+## 基本绘图参数设置
+
+
+```python
+def get_ax(rows=1, cols=1, size=8):
+    """Return a Matplotlib Axes array to be used in
+    all visualizations in the notebook. Provide a
+    central point to control graph sizes.
+    
+    Change the default size attribute to control the size
+    of rendered images
+    """
+    _, ax = plt.subplots(rows, cols, figsize=(size*cols, size*rows))
+    return ax
+```
+
+## 数据集
+
+创建一个合成数据集
+
+扩展Dataset类并添加一个方法来加载形状数据集`load_shapes()`，并覆盖以下方法：
+
+* load_image()
+* load_mask()
+* image_reference()
+
+
+```python
+class ShapesDataset(utils.Dataset):
+    """Generates the shapes synthetic dataset. The dataset consists of simple
+    shapes (triangles, squares, circles) placed randomly on a blank surface.
+    The images are generated on the fly. No file access required.
+    """
+
+    def load_shapes(self, count, height, width):
+        """Generate the requested number of synthetic images.
+        count: number of images to generate.
+        height, width: the size of the generated images.
+        """
+        # Add classes
+        self.add_class("shapes", 1, "square")
+        self.add_class("shapes", 2, "circle")
+        self.add_class("shapes", 3, "triangle")
+
+        # Add images
+        # Generate random specifications of images (i.e. color and
+        # list of shapes sizes and locations). This is more compact than
+        # actual images. Images are generated on the fly in load_image().
+        for i in range(count):
+            bg_color, shapes = self.random_image(height, width)
+            self.add_image("shapes", image_id=i, path=None,
+                           width=width, height=height,
+                           bg_color=bg_color, shapes=shapes)
+
+    def load_image(self, image_id):
+        """Generate an image from the specs of the given image ID.
+        Typically this function loads the image from a file, but
+        in this case it generates the image on the fly from the
+        specs in image_info.
+        """
+        info = self.image_info[image_id]
+        bg_color = np.array(info['bg_color']).reshape([1, 1, 3])
+        image = np.ones([info['height'], info['width'], 3], dtype=np.uint8)
+        image = image * bg_color.astype(np.uint8)
+        for shape, color, dims in info['shapes']:
+            image = self.draw_shape(image, shape, dims, color)
+        return image
+
+    def image_reference(self, image_id):
+        """Return the shapes data of the image."""
+        info = self.image_info[image_id]
+        if info["source"] == "shapes":
+            return info["shapes"]
+        else:
+            super(self.__class__).image_reference(self, image_id)
+
+    def load_mask(self, image_id):
+        """Generate instance masks for shapes of the given image ID.
+        """
+        info = self.image_info[image_id]
+        shapes = info['shapes']
+        count = len(shapes)
+        mask = np.zeros([info['height'], info['width'], count], dtype=np.uint8)
+        for i, (shape, _, dims) in enumerate(info['shapes']):
+            mask[:, :, i:i+1] = self.draw_shape(mask[:, :, i:i+1].copy(),
+                                                shape, dims, 1)
+        # Handle occlusions
+        occlusion = np.logical_not(mask[:, :, -1]).astype(np.uint8)
+        for i in range(count-2, -1, -1):
+            mask[:, :, i] = mask[:, :, i] * occlusion
+            occlusion = np.logical_and(occlusion, np.logical_not(mask[:, :, i]))
+        # Map class names to class IDs.
+        class_ids = np.array([self.class_names.index(s[0]) for s in shapes])
+        return mask, class_ids.astype(np.int32)
+
+    def draw_shape(self, image, shape, dims, color):
+        """Draws a shape from the given specs."""
+        # Get the center x, y and the size s
+        x, y, s = dims
+        if shape == 'square':
+            cv2.rectangle(image, (x-s, y-s), (x+s, y+s), color, -1)
+        elif shape == "circle":
+            cv2.circle(image, (x, y), s, color, -1)
+        elif shape == "triangle":
+            points = np.array([[(x, y-s),
+                                (x-s/math.sin(math.radians(60)), y+s),
+                                (x+s/math.sin(math.radians(60)), y+s),
+                                ]], dtype=np.int32)
+            cv2.fillPoly(image, points, color)
+        return image
+
+    def random_shape(self, height, width):
+        """Generates specifications of a random shape that lies within
+        the given height and width boundaries.
+        Returns a tuple of three valus:
+        * The shape name (square, circle, ...)
+        * Shape color: a tuple of 3 values, RGB.
+        * Shape dimensions: A tuple of values that define the shape size
+                            and location. Differs per shape type.
+        """
+        # Shape
+        shape = random.choice(["square", "circle", "triangle"])
+        # Color
+        color = tuple([random.randint(0, 255) for _ in range(3)])
+        # Center x, y
+        buffer = 20
+        y = random.randint(buffer, height - buffer - 1)
+        x = random.randint(buffer, width - buffer - 1)
+        # Size
+        s = random.randint(buffer, height//4)
+        return shape, color, (x, y, s)
+
+    def random_image(self, height, width):
+        """Creates random specifications of an image with multiple shapes.
+        Returns the background color of the image and a list of shape
+        specifications that can be used to draw the image.
+        """
+        # Pick random background color
+        bg_color = np.array([random.randint(0, 255) for _ in range(3)])
+        # Generate a few random shapes and record their
+        # bounding boxes
+        shapes = []
+        boxes = []
+        N = random.randint(1, 4)
+        for _ in range(N):
+            shape, color, dims = self.random_shape(height, width)
+            shapes.append((shape, color, dims))
+            x, y, s = dims
+            boxes.append([y-s, x-s, y+s, x+s])
+        # Apply non-max suppression wit 0.3 threshold to avoid
+        # shapes covering each other
+        keep_ixs = utils.non_max_suppression(np.array(boxes), np.arange(N), 0.3)
+        shapes = [s for i, s in enumerate(shapes) if i in keep_ixs]
+        return bg_color, shapes
+```
+
+
+```python
+# Training dataset
+dataset_train = ShapesDataset()
+dataset_train.load_shapes(500, config.IMAGE_SHAPE[0], config.IMAGE_SHAPE[1])
+dataset_train.prepare()
+
+# Validation dataset
+dataset_val = ShapesDataset()
+dataset_val.load_shapes(50, config.IMAGE_SHAPE[0], config.IMAGE_SHAPE[1])
+dataset_val.prepare()
+```
+
+
+```python
+# Load and display random samples
+image_ids = np.random.choice(dataset_train.image_ids, 4)
+for image_id in image_ids:
+    image = dataset_train.load_image(image_id)
+    mask, class_ids = dataset_train.load_mask(image_id)
+    visualize.display_top_masks(image, mask, class_ids, dataset_train.class_names)
+```
+
+
+![png](mask_rcnn/output_19_0.png)
+
+
+
+![png](mask_rcnn/output_19_1.png)
+
+
+
+![png](mask_rcnn/output_19_2.png)
+
+
+
+![png](mask_rcnn/output_19_3.png)
+
+
+## 创建模型
+
+
+```python
+# Create model in training mode
+model = modellib.MaskRCNN(mode="training", config=config,
+                          model_dir=MODEL_DIR)
+```
+
+
+```python
+# Which weights to start with?
+init_with = "coco"  # imagenet, coco, or last
+
+if init_with == "imagenet":
+    model.load_weights(model.get_imagenet_weights(), by_name=True)
+elif init_with == "coco":
+    # Load weights trained on MS COCO, but skip layers that
+    # are different due to the different number of classes
+    # See README for instructions to download the COCO weights
+    model.load_weights(COCO_MODEL_PATH, by_name=True,
+                       exclude=["mrcnn_class_logits", "mrcnn_bbox_fc", 
+                                "mrcnn_bbox", "mrcnn_mask"])
+elif init_with == "last":
+    # Load the last model you trained and continue training
+    model.load_weights(model.find_last()[1], by_name=True)
+```
+
+## 训练
+
+分两个阶段训练：
+1.只有头部。在这里，我们冻结所有的骨干层，只训练随机初始化层（即我们没有使用MS COCO预先训练的权重）。为了仅训练头层，将`layers ='heads'`传递给`train（）`函数。
+
+2.微调所有图层。对于这个简单的例子，这不是必要的，但我们将其包括在内以显示过程。只需传递`layers =“all`来训练所有图层。
+
+
+```python
+# Train the head branches
+# Passing layers="heads" freezes all layers except the head
+# layers. You can also pass a regular expression to select
+# which layers to train by name pattern.
+model.train(dataset_train, dataset_val, 
+            learning_rate=config.LEARNING_RATE, 
+            epochs=1, 
+            layers='heads')
+```
+
+
+```python
+# Fine tune all layers
+# Passing layers="all" trains all layers. You can also 
+# pass a regular expression to select which layers to
+# train by name pattern.
+model.train(dataset_train, dataset_val, 
+            learning_rate=config.LEARNING_RATE / 10,
+            epochs=2, 
+            layers="all")
+```
+
+
+```python
+# Save weights
+# Typically not needed because callbacks save after every epoch
+# Uncomment to save manually
+# model_path = os.path.join(MODEL_DIR, "mask_rcnn_shapes.h5")
+# model.keras_model.save_weights(model_path)
+```
+
+## 检测
+
+
+```python
+class InferenceConfig(ShapesConfig):
+    GPU_COUNT = 1
+    IMAGES_PER_GPU = 1
+
+inference_config = InferenceConfig()
+
+# Recreate the model in inference mode
+model = modellib.MaskRCNN(mode="inference", 
+                          config=inference_config,
+                          model_dir=MODEL_DIR)
+
+# Get path to saved weights
+# Either set a specific path or find last trained weights
+# model_path = os.path.join(ROOT_DIR, ".h5 file name here")
+model_path = model.find_last()[1]
+
+# Load trained weights (fill in path to trained weights here)
+assert model_path != "", "Provide path to trained weights"
+print("Loading weights from ", model_path)
+model.load_weights(model_path, by_name=True)
+```
+
+
+```python
+# Test on a random image
+image_id = random.choice(dataset_val.image_ids)
+original_image, image_meta, gt_class_id, gt_bbox, gt_mask =\
+    modellib.load_image_gt(dataset_val, inference_config, 
+                           image_id, use_mini_mask=False)
+
+log("original_image", original_image)
+log("image_meta", image_meta)
+log("gt_class_id", gt_class_id)
+log("gt_bbox", gt_bbox)
+log("gt_mask", gt_mask)
+
+visualize.display_instances(original_image, gt_bbox, gt_mask, gt_class_id, 
+                            dataset_train.class_names, figsize=(8, 8))
+```
+
+    original_image           shape: (128, 128, 3)         min:  108.00000  max:  236.00000
+    image_meta               shape: (12,)                 min:    0.00000  max:  128.00000
+    gt_bbox                  shape: (2, 5)                min:    2.00000  max:  102.00000
+    gt_mask                  shape: (128, 128, 2)         min:    0.00000  max:    1.00000
+
+
+
+![png](mask_rcnn/output_29_1.png)
+
+
+
+```python
+results = model.detect([original_image], verbose=1)
+
+r = results[0]
+visualize.display_instances(original_image, r['rois'], r['masks'], r['class_ids'], 
+                            dataset_val.class_names, r['scores'], ax=get_ax())
+```
+
+    Processing 1 images
+    image                    shape: (128, 128, 3)         min:  108.00000  max:  236.00000
+    molded_images            shape: (1, 128, 128, 3)      min:  -15.70000  max:  132.10000
+    image_metas              shape: (1, 12)               min:    0.00000  max:  128.00000
+
+
+
+![png](mask_rcnn/output_30_1.png)
+
+
+## 验证结果
+
+
+```python
+# Compute VOC-Style mAP @ IoU=0.5
+# Running on 10 images. Increase for better accuracy.
+image_ids = np.random.choice(dataset_val.image_ids, 10)
+APs = []
+for image_id in image_ids:
+    # Load image and ground truth data
+    image, image_meta, gt_class_id, gt_bbox, gt_mask =\
+        modellib.load_image_gt(dataset_val, inference_config,
+                               image_id, use_mini_mask=False)
+    molded_images = np.expand_dims(modellib.mold_image(image, inference_config), 0)
+    # Run object detection
+    results = model.detect([image], verbose=0)
+    r = results[0]
+    # Compute AP
+    AP, precisions, recalls, overlaps =\
+        utils.compute_ap(gt_bbox, gt_class_id, gt_mask,
+                         r["rois"], r["class_ids"], r["scores"], r['masks'])
+    APs.append(AP)
+    
+print("mAP: ", np.mean(APs))
+```
+
+    mAP:  0.95
 
 
 # Mask R-CNN  - 检查训练数据
@@ -272,102 +816,13 @@ for i, info in enumerate(dataset.class_info):
     print("{:3}. {:50}".format(i, info['name']))
 ```
 
-    loading annotations into memory...
-    Done (t=11.93s)
-    creating index...
-    index created!
-    Image Count: 82081
-    Class Count: 81
-      0. BG                                                
-      1. person                                            
-      2. bicycle                                           
-      3. car                                               
-      4. motorcycle                                        
-      5. airplane                                          
-      6. bus                                               
-      7. train                                             
-      8. truck                                             
-      9. boat                                              
-     10. traffic light                                     
-     11. fire hydrant                                      
-     12. stop sign                                         
-     13. parking meter                                     
-     14. bench                                             
-     15. bird                                              
-     16. cat                                               
-     17. dog                                               
-     18. horse                                             
-     19. sheep                                             
-     20. cow                                               
-     21. elephant                                          
-     22. bear                                              
-     23. zebra                                             
-     24. giraffe                                           
-     25. backpack                                          
-     26. umbrella                                          
-     27. handbag                                           
-     28. tie                                               
-     29. suitcase                                          
-     30. frisbee                                           
-     31. skis                                              
-     32. snowboard                                         
-     33. sports ball                                       
-     34. kite                                              
-     35. baseball bat                                      
-     36. baseball glove                                    
-     37. skateboard                                        
-     38. surfboard                                         
-     39. tennis racket                                     
-     40. bottle                                            
-     41. wine glass                                        
-     42. cup                                               
-     43. fork                                              
-     44. knife                                             
-     45. spoon                                             
-     46. bowl                                              
-     47. banana                                            
-     48. apple                                             
-     49. sandwich                                          
-     50. orange                                            
-     51. broccoli                                          
-     52. carrot                                            
-     53. hot dog                                           
-     54. pizza                                             
-     55. donut                                             
-     56. cake                                              
-     57. chair                                             
-     58. couch                                             
-     59. potted plant                                      
-     60. bed                                               
-     61. dining table                                      
-     62. toilet                                            
-     63. tv                                                
-     64. laptop                                            
-     65. mouse                                             
-     66. remote                                            
-     67. keyboard                                          
-     68. cell phone                                        
-     69. microwave                                         
-     70. oven                                              
-     71. toaster                                           
-     72. sink                                              
-     73. refrigerator                                      
-     74. book                                              
-     75. clock                                             
-     76. vase                                              
-     77. scissors                                          
-     78. teddy bear                                        
-     79. hair drier                                        
-     80. toothbrush                                        
-
-
 ## 显示样本
 
 加载并显示原始图像和掩模图像。
 
 
 ```python
-# Load and display random samples
+# 加载并显示随机样本
 image_ids = np.random.choice(dataset.image_ids, 4)
 for image_id in image_ids:
     image = dataset.load_image(image_id)
@@ -376,19 +831,19 @@ for image_id in image_ids:
 ```
 
 
-![png](mask-rcnn2/output_7_0.png)
+![png](mask_rcnn/output_40_0.png)
 
 
 
-![png](mask-rcnn2/output_7_1.png)
+![png](mask_rcnn/output_40_1.png)
 
 
 
-![png](mask-rcnn2/output_7_2.png)
+![png](mask_rcnn/output_40_2.png)
 
 
 
-![png](mask-rcnn2/output_7_3.png)
+![png](mask_rcnn/output_40_3.png)
 
 
 ## 边界框
@@ -397,20 +852,22 @@ for image_id in image_ids:
 
 
 ```python
-# Load random image and mask.
+# 加载并显示图片和掩模
 image_id = random.choice(dataset.image_ids)
 image = dataset.load_image(image_id)
 mask, class_ids = dataset.load_mask(image_id)
-# Compute Bounding box
+
+# 计算分割框
 bbox = utils.extract_bboxes(mask)
 
-# Display image and additional stats
+# 显示图片和结果
 print("image_id ", image_id, dataset.image_reference(image_id))
 log("image", image)
 log("mask", mask)
 log("class_ids", class_ids)
 log("bbox", bbox)
-# Display image and instances
+
+# 显示图片和独立的物体
 visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 ```
 
@@ -422,7 +879,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 
 
 
-![png](mask-rcnn2/output_9_1.png)
+![png](mask_rcnn/output_42_1.png)
 
 
 ## 调整图像大小
@@ -470,7 +927,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 
 
 
-![png](mask-rcnn2/output_11_2.png)
+![png](mask_rcnn/output_44_2.png)
 
 
 ## 迷你掩模图像
@@ -505,7 +962,7 @@ display_images([image]+[mask[:,:,i] for i in range(min(mask.shape[-1], 7))])
 
 
 
-![png](mask-rcnn2/output_13_1.png)
+![png](mask_rcnn/output_46_1.png)
 
 
 
@@ -514,7 +971,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 ```
 
 
-![png](mask-rcnn2/output_14_0.png)
+![png](mask_rcnn/output_47_0.png)
 
 
 
@@ -530,7 +987,7 @@ display_images([image]+[mask[:,:,i] for i in range(min(mask.shape[-1], 7))])
 
 
 
-![png](mask-rcnn2/output_15_1.png)
+![png](mask_rcnn/output_48_1.png)
 
 
 
@@ -540,7 +997,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 ```
 
 
-![png](mask-rcnn2/output_16_0.png)
+![png](mask_rcnn/output_49_0.png)
 
 
 ## 锚点
@@ -580,18 +1037,6 @@ for l in range(num_levels):
     anchors_per_level.append(anchors_per_cell * num_cells // config.RPN_ANCHOR_STRIDE**2)
     print("Anchors in Level {}: {}".format(l, anchors_per_level[l]))
 ```
-
-    Count:  65472
-    Scales:  (32, 64, 128, 256, 512)
-    ratios:  [0.5, 1, 2]
-    Anchors per Cell:  3
-    Levels:  5
-    Anchors in Level 0: 49152
-    Anchors in Level 1: 12288
-    Anchors in Level 2: 3072
-    Anchors in Level 3: 768
-    Anchors in Level 4: 192
-
 
 Visualize anchors of one cell at the center of the feature map of a specific level.
 
@@ -642,7 +1087,7 @@ for level in range(levels):
 
 
 
-![png](mask-rcnn2/output_20_2.png)
+![png](mask_rcnn/output_53_2.png)
 
 
 ## 数据生成器
@@ -694,21 +1139,6 @@ print("image_id: ", image_id, dataset.image_reference(image_id))
 mrcnn_class_ids = mrcnn_class_ids[:,:,0]
 ```
 
-    /usr/local/lib/python3.5/dist-packages/scipy/ndimage/interpolation.py:600: UserWarning: From scipy 0.13.0, the output shape of zoom() is calculated with round() instead of int() - for these inputs the size of the returned array has changed.
-      "the returned array has changed.", UserWarning)
-
-
-    rois                     shape: (4, 128, 4)           min:    0.00000  max: 1023.00000
-    mrcnn_class_ids          shape: (4, 128, 1)           min:    0.00000  max:   67.00000
-    mrcnn_bbox               shape: (4, 128, 81, 5)       min:   -3.58824  max:    3.45455
-    mrcnn_mask               shape: (4, 128, 28, 28, 81)  min:    0.00000  max:    1.00000
-    gt_boxes                 shape: (4, 100, 5)           min:    0.00000  max: 1024.00000
-    gt_masks                 shape: (4, 56, 56, 100)      min:    0.00000  max:    1.00000
-    rpn_match                shape: (4, 65472, 1)         min:   -1.00000  max:    1.00000
-    rpn_bbox                 shape: (4, 256, 4)           min:   -4.60969  max:    1.76777
-    image_id:  2937 http://cocodataset.org/#explore?id=135453
-
-
 
 ```python
 b = 0
@@ -752,7 +1182,7 @@ visualize.draw_boxes(sample_image, boxes=anchors[positive_anchor_ids],
 
 
 
-![png](mask-rcnn2/output_25_1.png)
+![png](mask_rcnn/output_58_1.png)
 
 
 
@@ -762,7 +1192,7 @@ visualize.draw_boxes(sample_image, boxes=anchors[negative_anchor_ids])
 ```
 
 
-![png](mask-rcnn2/output_26_0.png)
+![png](mask_rcnn/output_59_0.png)
 
 
 
@@ -772,7 +1202,7 @@ visualize.draw_boxes(sample_image, boxes=anchors[np.random.choice(neutral_anchor
 ```
 
 
-![png](mask-rcnn2/output_27_0.png)
+![png](mask_rcnn/output_60_0.png)
 
 
 ## ROIs
@@ -804,7 +1234,7 @@ if random_rois:
 
 
 
-![png](mask-rcnn2/output_29_1.png)
+![png](mask_rcnn/output_62_1.png)
 
 
 
@@ -827,7 +1257,7 @@ if random_rois:
 ```
 
 
-![png](mask-rcnn2/output_30_0.png)
+![png](mask_rcnn/output_63_0.png)
 
 
 
@@ -846,23 +1276,3 @@ if random_rois:
         print("{:5} {:5.2f}".format(positive_rois, positive_rois/ids.shape[1]))
     print("Average percent: {:.2f}".format(total/(limit*ids.shape[1])))
 ```
-
-       42  0.33
-       42  0.33
-
-
-    /usr/local/lib/python3.5/dist-packages/scipy/ndimage/interpolation.py:600: UserWarning: From scipy 0.13.0, the output shape of zoom() is calculated with round() instead of int() - for these inputs the size of the returned array has changed.
-      "the returned array has changed.", UserWarning)
-
-
-       42  0.33
-       42  0.33
-       42  0.33
-       42  0.33
-       42  0.33
-       42  0.33
-       42  0.33
-       42  0.33
-    Average percent: 0.33
-
-
