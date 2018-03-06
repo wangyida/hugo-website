@@ -18,7 +18,7 @@ caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic
 
 这是基于Python 3，Keras和TensorFlow上的[Mask R-CNN](https://arxiv.org/abs/1703.06870)的实现。 该模型为图像中的每个对象实例生成边界框和分割掩码。 它基于特征金字塔网络（FPN）和ResNet101主干网。
 
-![实例分割样例](mask_rcnn/street.png)
+![实例分割样例](/img/mask_rcnn/street.png)
 
 源代码库包括包括：
 * 在FPN和ResNet101上构建的Mask R-CNN的源代码。
@@ -37,30 +37,30 @@ caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic
 
 ## 1. 锚点排序和筛选
 可视化第一阶段候选区域网络的每一步，并显示正负锚点以及锚点框架细化。
-![](mask_rcnn/detection_anchors.png)
+![](/img/mask_rcnn/detection_anchors.png)
 
 ## 2. 边界框细化
 这是第二阶段最终检测框（虚线）和应用于它们的细化（实线）的示例。
-![](mask_rcnn/detection_refinement.png)
+![](/img/mask_rcnn/detection_refinement.png)
 
 ## 3. 掩模生成
 生成掩模的实例。 然后将它们缩放并放置在正确位置的图像上。
-![](mask_rcnn/detection_masks.png)
+![](/img/mask_rcnn/detection_masks.png)
 
 ## 4. 层激活
 通常检查不同层的激活来追踪不合理激活（全零或随机噪声）是有用的。
-![](mask_rcnn/detection_activations.png)
+![](/img/mask_rcnn/detection_activations.png)
 
 ## 5. 权重直方图
-![](mask_rcnn/detection_histograms.png)
+![](/img/mask_rcnn/detection_histograms.png)
 
 ## 6. 将不同的部分组合成最终结果
-![](mask_rcnn/detection_final.png)
+![](/img/mask_rcnn/detection_final.png)
 
 
 ## 更多实例
-![羊](mask_rcnn/sheep.png)
-![椰子](mask_rcnn/donuts.png)
+![羊](/img/mask_rcnn/sheep.png)
+![椰子](/img/mask_rcnn/donuts.png)
 
 # Mask R-CNN 演示实例
 
@@ -91,7 +91,7 @@ ROOT_DIR = os.getcwd()
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
 # 訓練的權重文件的本地路徑
-COCO_MODEL_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
+COCO_MODEL_PATH = os.path.join(ROOT_DIR, "/img/mask_rcnn_coco.h5")
 # 如果需要，從远端下載COCO訓練的權重
 if not os.path.exists(COCO_MODEL_PATH):
     utils.download_trained_weights(COCO_MODEL_PATH)
@@ -241,7 +241,7 @@ visualize.display_instances(image, r['rois'], r['masks'], r['class_ids'],
 
 
 
-![png](mask_rcnn/output_9_1.png)
+![png](/img/mask_rcnn/output_9_1.png)
 
 
 # Mask R-CNN - 训练形状数据集
@@ -556,19 +556,19 @@ for image_id in image_ids:
 ```
 
 
-![png](mask_rcnn/output_19_0.png)
+![png](/img/mask_rcnn/output_19_0.png)
 
 
 
-![png](mask_rcnn/output_19_1.png)
+![png](/img/mask_rcnn/output_19_1.png)
 
 
 
-![png](mask_rcnn/output_19_2.png)
+![png](/img/mask_rcnn/output_19_2.png)
 
 
 
-![png](mask_rcnn/output_19_3.png)
+![png](/img/mask_rcnn/output_19_3.png)
 
 
 ## 创建模型
@@ -690,7 +690,7 @@ visualize.display_instances(original_image, gt_bbox, gt_mask, gt_class_id,
 
 
 
-![png](mask_rcnn/output_29_1.png)
+![png](/img/mask_rcnn/output_29_1.png)
 
 
 
@@ -709,7 +709,7 @@ visualize.display_instances(original_image, r['rois'], r['masks'], r['class_ids'
 
 
 
-![png](mask_rcnn/output_30_1.png)
+![png](/img/mask_rcnn/output_30_1.png)
 
 
 ## 验证结果
@@ -831,19 +831,19 @@ for image_id in image_ids:
 ```
 
 
-![png](mask_rcnn/output_40_0.png)
+![png](/img/mask_rcnn/output_40_0.png)
 
 
 
-![png](mask_rcnn/output_40_1.png)
+![png](/img/mask_rcnn/output_40_1.png)
 
 
 
-![png](mask_rcnn/output_40_2.png)
+![png](/img/mask_rcnn/output_40_2.png)
 
 
 
-![png](mask_rcnn/output_40_3.png)
+![png](/img/mask_rcnn/output_40_3.png)
 
 
 ## 边界框
@@ -879,7 +879,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 
 
 
-![png](mask_rcnn/output_42_1.png)
+![png](/img/mask_rcnn/output_42_1.png)
 
 
 ## 调整图像大小
@@ -927,7 +927,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 
 
 
-![png](mask_rcnn/output_44_2.png)
+![png](/img/mask_rcnn/output_44_2.png)
 
 
 ## 迷你掩模图像
@@ -962,7 +962,7 @@ display_images([image]+[mask[:,:,i] for i in range(min(mask.shape[-1], 7))])
 
 
 
-![png](mask_rcnn/output_46_1.png)
+![png](/img/mask_rcnn/output_46_1.png)
 
 
 
@@ -971,7 +971,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 ```
 
 
-![png](mask_rcnn/output_47_0.png)
+![png](/img/mask_rcnn/output_47_0.png)
 
 
 
@@ -987,7 +987,7 @@ display_images([image]+[mask[:,:,i] for i in range(min(mask.shape[-1], 7))])
 
 
 
-![png](mask_rcnn/output_48_1.png)
+![png](/img/mask_rcnn/output_48_1.png)
 
 
 
@@ -997,7 +997,7 @@ visualize.display_instances(image, bbox, mask, class_ids, dataset.class_names)
 ```
 
 
-![png](mask_rcnn/output_49_0.png)
+![png](/img/mask_rcnn/output_49_0.png)
 
 
 ## 锚点
@@ -1087,7 +1087,7 @@ for level in range(levels):
 
 
 
-![png](mask_rcnn/output_53_2.png)
+![png](/img/mask_rcnn/output_53_2.png)
 
 
 ## 数据生成器
@@ -1182,7 +1182,7 @@ visualize.draw_boxes(sample_image, boxes=anchors[positive_anchor_ids],
 
 
 
-![png](mask_rcnn/output_58_1.png)
+![png](/img/mask_rcnn/output_58_1.png)
 
 
 
@@ -1192,7 +1192,7 @@ visualize.draw_boxes(sample_image, boxes=anchors[negative_anchor_ids])
 ```
 
 
-![png](mask_rcnn/output_59_0.png)
+![png](/img/mask_rcnn/output_59_0.png)
 
 
 
@@ -1202,7 +1202,7 @@ visualize.draw_boxes(sample_image, boxes=anchors[np.random.choice(neutral_anchor
 ```
 
 
-![png](mask_rcnn/output_60_0.png)
+![png](/img/mask_rcnn/output_60_0.png)
 
 
 ## ROIs
@@ -1234,7 +1234,7 @@ if random_rois:
 
 
 
-![png](mask_rcnn/output_62_1.png)
+![png](/img/mask_rcnn/output_62_1.png)
 
 
 
@@ -1257,7 +1257,7 @@ if random_rois:
 ```
 
 
-![png](mask_rcnn/output_63_0.png)
+![png](/img/mask_rcnn/output_63_0.png)
 
 
 
