@@ -12,7 +12,7 @@ summary = "Variational inference embedded in deep structures."
 image_preview = ""
 
 # Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
+# Example: `tags = ["machine-learning", "deep-learning", "semantic segmetatio"]`
 tags = ["variational-inference"]
 
 # Optional external URL for project (replaces project detail page).
