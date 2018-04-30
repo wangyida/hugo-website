@@ -22,7 +22,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Ph.D student in CAMP CV group"
+  course = "Ph.D student in CAMPAR"
   institution = "Technische Universität München"
   year = 2017
 
@@ -40,10 +40,12 @@ weight = 1
 
 # Biography
 
-I'm Ph.D student in [Chair for Computer Aided Medical Procedures & Augmented Reality](http://campar.in.tum.de/WebHome), [Fakultät für Informatik](http://www.in.tum.de) in [Technische Universität München](https://www.tum.de/) for computer vision and machine learning. Currently I'm co-supervised by Dr. [Federico Tombari](http://campar.in.tum.de/Main/FedericoTombari) and Prof. Dr. [Nassir Navab](http://campar.in.tum.de/Main/NassirNavab). My Ph.D topic is *development of deep learning techniques for representation and processing of 3D data for complex visual tasks*.
+I'm Ph.D student in [Chair for Computer Aided Medical Procedures & Augmented Reality](http://campar.in.tum.de/WebHome), [Fakultät für Informatik](http://www.in.tum.de) in [Technische Universität München](https://www.tum.de/) for computer vision and machine learning. 
 
-Previously I got master degree in Pattern Recognition and Intelligent System Laboratory from [Beijing University of Posts and Telecommunications](http://www.bupt.edu.cn/), supervised by Dr. [Weihong Deng](http://www.whdeng.cn/). I spent two years doing research on biomedical information analysis and 3D vision tasks in BUPT. 7 year part time track and field athlete in BUPT with intercontinental cup. 
+Currently co-supervised by Dr. [Federico Tombari](http://campar.in.tum.de/Main/FedericoTombari) and Prof. Dr. [Nassir Navab](http://campar.in.tum.de/Main/NassirNavab). with a topic of *Development of deep learning techniques for representation and processing of 3D data for complex visual tasks*.
+
+I get master degree in Pattern Recognition and Intelligent System Laboratory from [Beijing University of Posts and Telecommunications](http://www.bupt.edu.cn/), supervised by Dr. [Weihong Deng](http://www.whdeng.cn/). Two years are spent on research for biomedical information analysis and 3D vision tasks in BUPT. Additionally, I'm also track and field athlete in rank B League of Beijing City. 
 
 Several academic projects were sponsored by Microsoft and Google open source funding, two Google Summer of Codes projects are supervised by mentors in OpenCV which is [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D object pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj).
 
-**Curriculum Vitae** here: {{% staticref "files/resume_YidaWang.pdf" %}}English{{% /staticref %}}, {{% staticref "files/王一达简历.pdf" %}}中文{{% /staticref %}} and {{% staticref "files/fortsetzen_YidaWang.pdf" %}}Deutsche{{% /staticref %}}
+**Curriculum Vitae** in: {{% staticref "files/resume_YidaWang.pdf" %}}English{{% /staticref %}}, {{% staticref "files/王一达简历.pdf" %}}中文{{% /staticref %}} and {{% staticref "files/fortsetzen_YidaWang.pdf" %}}Deutsche{{% /staticref %}}

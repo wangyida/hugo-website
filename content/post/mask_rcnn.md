@@ -2,7 +2,7 @@
 date = 2018-01-29
 lastmod = 2018-03-05
 draft = false
-tags = ["academic", "python", "annotation"]
+tags = ["canthink"]
 title = "基于Mask RCNN的通用物体检测分割平台"
 math = true
 summary = """

@@ -62,6 +62,10 @@ filter_default = 0
   tag = ".telecommunication"
 
 [[filter]]
+  name = "CANTHINK"
+  tag = ".canthink"
+
+[[filter]]
   name = "Other"
   tag = ".demo"
 
