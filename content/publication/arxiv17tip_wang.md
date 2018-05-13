@@ -1,13 +1,12 @@
 +++
-abstract = "Given large amount of real photos for training, Convolutional neural network shows excellent performance on object recognition tasks. However, the process of collecting data is so tedious and the background are also limited which makes it hard to establish a perfect database. In this paper, our generative model trained with synthetic images rendered from 3D models reduces the workload of data collection and limitation of conditions. Our structure is composed of two sub-networks: semantic foreground object reconstruction network based on Bayesian inference and classification network based on multi-triplet cost function for avoiding over-fitting problem on monotone surface and fully utilizing pose information by establishing sphere-like distribution of descriptors in each category which is helpful for recognition on regular photos according to poses, lighting condition, background and category information of rendered images. Firstly, our conjugate structure called generative model with metric learning utilizing additional foreground object channels generated from Bayesian rendering as the joint of two sub-networks. Multi-triplet cost function based on poses for object recognition are used for metric learning which makes it possible training a category classifier purely based on synthetic data. Secondly, we design a coordinate training strategy with the help of adaptive noises acting as corruption on input images to help both sub-networks benefit from each other and avoid inharmonious parameter tuning due to different convergence speed of two sub-networks. Our structure achieves the state of the art accuracy of over 50 percent on ShapeNet database with data migration obstacle from synthetic images to real photos. This pipeline makes it applicable to do recognition on real images only based on 3D models."
-abstract_short = "Our structure is composed of two sub-networks: semantic foreground object reconstruction network based on Bayesian inference and classification network based on multi-triplet cost function for avoiding over-fitting problem on monotone surface and fully utilizing pose information by establishing sphere-like distribution of descriptors in each category which is helpful for recognition on regular photos according to poses, lighting condition, background and category information of rendered images. It achieves the state of the art accuracy of over 50 percent on ShapeNet database with data migration obstacle from synthetic images to real photos. This pipeline makes it applicable to do recognition on real images only based on 3D models."
+abstract = "One of the bottlenecks in acquiring a perfect database for deep learning is the tedious process of collecting and labeling data. In this paper, we propose a generative model trained with synthetic images rendered from 3D models which can reduce the burden on collecting real training data and make the background conditions more realistic. Our architecture is composed of two sub-networks: a semantic foreground object reconstruction network based on Bayesian inference, and a classification network based on multi-triplet cost training for avoiding over-fitting on the monotone synthetic object surface and utilizing accurate information of synthetic images like object poses and lighting conditions which are helpful for recognizing regular photos. Firstly, our generative model with metric learning utilizes additional foreground object channels generated from semantic foreground object reconstruction sub-network for recognizing the original input images. Multi-triplet cost function based on poses is used for metric learning which makes it possible to train an effective categorical classifier purely based on synthetic data. Secondly, we design a coordinate training strategy with the help of adaptive noise applied on the inputs of both of the concatenated sub-networks to make them benefit from each other and avoid inharmonious parameter tuning due to different convergence speed of two sub-networks. Our architecture achieves the state of the art accuracy of 50.5% on the ShapeNet database with data migration obstacle from synthetic images to real images. This pipeline makes it applicable to do recognition on real images only based on 3D models. Our codes are available at Github"
 authors = ["Yida Wang, Weihong Deng"]
 date = "2017-05-01"
 image_preview = "pipeline_tip.svg"
 math = true
 publication_types = ["3"]
 publication = "In *Image Processing (TIP) peer review*, IEEE."
-publication_short = "TIP peer review"
+publication_short = "TIP peer review last stage"
 selected = true
 title = "Generative Model with Coordinate Metric Learning for Object Recognition Based on 3D Models"
 tags = ["deep-learning", "variational-inference", "computer-vision"]
@@ -23,8 +22,59 @@ input | target | manifold
 :----:|:----:|:----: 
 ![test_xs](/img/test_xs.png) | ![test_ts](/img/test_ts.png) | ![manifold_latest](/img/manifold_latest.png) 
 
-![pipeline_tip](/img/pipeline_tip.svg)
+Method pipeline.
+![pipeline_tip](/img/pipeline_tip.png)
+
+Image analysis for average and standard deviation for data released together with our paper.
 ![imganalysis](/img/imganalysis.svg)
+
+Examples for triplet set used in our metric learning.
 ![triplet_samples](/img/triplet_samples.svg)
+
+## Examples for real world tasks
+
+### Depth prediction
+Example for depth prediction based on RGB images.
 ![show.gif](/img/show.gif)
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
+
+### Scene understanding 
+Examples for videos collected by [Bleenco](https://bleenco.com/).
+The first columns are reference videos and the second columns are videos shot by another camera which is set to be the prediction results based on the reference videos.
+The third columns are the prediction results where the scenes are predicted staticlly based on the scene shot by the second camera and people are predicted dynamically based on the understanding for input videos.
+
+The predicted people are mostly blurred because the architecture is robust to changes of clothes.
+
+**TRAINING**
+Scene 1 in Bleenco
+
+![](/img/bleenco_scene_1_train.gif)
+
+Scene 2 in Bleenco
+
+![](/img/bleenco_scene_2_train.gif)
+
+Scene 3 in Bleenco
+
+![](/img/bleenco_scene_3_train.gif)
+
+Scene 4 in Bleenco
+
+![](/img/bleenco_scene_4_train.gif)
+
+**VALIDATING**
+Scene 1 in Bleenco
+
+![](/img/bleenco_scene_1_valid.gif)
+
+Scene 2 in Bleenco
+
+![](/img/bleenco_scene_2_valid.gif)
+
+Scene 3 in Bleenco
+
+![](/img/bleenco_scene_3_valid.gif)
+
+Scene 4 in Bleenco
+
+![](/img/bleenco_scene_4_valid.gif)
+

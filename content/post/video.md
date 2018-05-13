@@ -61,7 +61,9 @@ No trans | With trans | Error diffusal | Lanczos
 :---:|:---:|:---:|:---:
 ![](/img/bbb-notrans.gif) | ![](/img/bbb-trans.gif) | ![](/img/bbb-error-diffusal.gif) | ![](/img/bbb-lanczos.gif)
 
-## From images to GIF
+## Images(PNG, BMP, JPEG...) to GIF
+
+Here is a way presenting several related series of frames spatially reasonable in form of GIF. Video is not necessary as a bridge between collection of images and GIF where `convert` is used as basic image processing tool.
 
 ```bash
 # Define a main function
@@ -78,6 +80,7 @@ main()
 }
 ```
 
+example on bleenco dataset
 ```bash
 # Scanning for each folders and make the animation
 main result_bleenco_1/generated/
@@ -88,17 +91,17 @@ main result_bleenco_4/generated/
 
 Scene 1 in Bleenco
 
-![](/img/bleenco_scene_1.gif)
+![](/img/bleenco_scene_1_train.gif)
 
 Scene 2 in Bleenco
 
-![](/img/bleenco_scene_2.gif)
+![](/img/bleenco_scene_2_train.gif)
 
 Scene 3 in Bleenco
 
-![](/img/bleenco_scene_3.gif)
+![](/img/bleenco_scene_3_train.gif)
 
 Scene 4 in Bleenco
 
-![](/img/bleenco_scene_4.gif)
+![](/img/bleenco_scene_4_train.gif)
 
