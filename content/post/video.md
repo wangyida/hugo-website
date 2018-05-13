@@ -60,3 +60,45 @@ ffmpeg -v warning -ss 00:00:00.000 -t 00:00:38.000 -i hand_pose.mp4 -vf scale=30
 No trans | With trans | Error diffusal | Lanczos 
 :---:|:---:|:---:|:---:
 ![](/img/bbb-notrans.gif) | ![](/img/bbb-trans.gif) | ![](/img/bbb-error-diffusal.gif) | ![](/img/bbb-lanczos.gif)
+
+## From images to GIF
+
+```bash
+# Define a main function
+main()
+{
+	folder=$1 
+	for f in ${folder}input_*.png 
+	do 
+		convert $f -size 10x xc:none ${f/input/target} -size 10x xc:none ${f/input/recon} \
+			+append ${f/input/merged} 
+	done 
+	convert -delay 15 -loop 0 ${folder}merged_*.png \
+		${folder}bleenco_scene.gif
+}
+```
+
+```bash
+# Scanning for each folders and make the animation
+main result_bleenco_1/generated/
+main result_bleenco_2/generated/
+main result_bleenco_3/generated/
+main result_bleenco_4/generated/
+```
+
+Scene 1 in Bleenco
+
+![](/img/bleenco_scene_1.gif)
+
+Scene 2 in Bleenco
+
+![](/img/bleenco_scene_2.gif)
+
+Scene 3 in Bleenco
+
+![](/img/bleenco_scene_3.gif)
+
+Scene 4 in Bleenco
+
+![](/img/bleenco_scene_4.gif)
+
