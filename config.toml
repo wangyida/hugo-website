@@ -43,14 +43,14 @@ defaultContentLanguageInSubdir = false
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Technische Universität München", url = "https://www.tum.de/" }, { name = "Beijing University of Posts and Telecommunications", url = "http://www.bupt.edu.cn/" }, { name = "OpenCV", url = "https://opencv.org/" }]
+  organizations = [ { name = "Technische Universität München", url = "https://www.tum.de/" }, { name = "Beijing University of Posts and Telecommunications", url = "http://www.bupt.edu.cn/" }, { name = "OpenCV", url = "https://opencv.org/" }, { name = "Bleenco", url = "https://bleenco.com/" }]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "Photo_race.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "yidawang_dot_cn@gmail_dot_com"
   address = "Boltzmannstraße 3, 85748 Garching bei München, Bavaria, Deutscheland"
-  office_hours = "Monday to Friday 9:00 to 17:00"
-  phone = "+49 151-4368-1357"
+  office_hours = "Monday to Friday 9:00 to 18:00"
+  phone = "+49 151-2710-5028"
   skype = "wangyida123@outlook.com"
   telegram = ""
 
