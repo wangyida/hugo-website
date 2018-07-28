@@ -11,7 +11,7 @@ A 10 day trip for southern Iceland
 
 [header]
 image = "post_trip/iceland.jpg"
-caption = "Image credit: [**Iceland**](https://en.wikipedia.org/wiki/Iceland)"
+caption = "[**Trip for Iceland**](https://en.wikipedia.org/wiki/Iceland)"
 
 +++
 
