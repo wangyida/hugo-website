@@ -20,6 +20,10 @@ url_video = ""
 
 +++
 
+<video autoplay="autoplay" loop="loop">
+	<source src="/img/3dv/3dv_presentation.mp4" type="video/mp4" />
+</video>
+
 Our target | Animations
 :----:|:----:
 <img src="/img/3dv/teaser.png" alt="road condition" width="300" height="300" frameborder="0" style="border:0" > | <img src="/img/3dv/video.gif" alt="road condition" width="300" height="300" frameborder="0" style="border:0" >
