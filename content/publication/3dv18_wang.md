@@ -10,29 +10,37 @@ publication = "In *International Conference on 3D Vision*, IEEE."
 publication_short = "3DV"
 selected = true
 title = "Adversarial Semantic Scene Completion from a Single Depth Image"
-tags = ["deep-learning", "computer-vision", "generative model", "3D"]
-url_code = ""
+tags = ["deep learning", "computer vision", "generative model", "3D"]
+url_code = "https://github.com/wangyida/gan-depth-semantic3d"
 url_dataset = ""
 url_pdf = ""
 url_project = "project/deep-learning/"
 url_slides = ""
-url_video = ""
+url_video = "https://youtu.be/udvBhkupwXE"
 
 +++
 
-<video autoplay="autoplay" loop="loop">
-	<source src="/img/3dv/3dv_presentation.mp4" type="video/mp4" />
+# <video autoplay="autoplay" loop="loop">
+<video id="video" controls preload="metadata">
+	<source src="/img/3dv/presentation.mp4" type="video/mp4" />
+	<track label="English" kind="subtitles" srclang="en" src="/img/3dv/presentation.vtt">
 </video>
 
-Our target | Animations
-:----:|:----:
-<img src="/img/3dv/teaser.png" alt="road condition" width="300" height="300" frameborder="0" style="border:0" > | <img src="/img/3dv/video.gif" alt="road condition" width="300" height="300" frameborder="0" style="border:0" >
+## Overview
+![](/img/3dv/overview.png)
+We introduce a direct reconstruction method to reconstruct from a 2.5D depth image to a 3D voxel data with both shape completion and semantic segmentation that relies on a deep architecture based on 3D VAE with an adversarial training to improve the performance of this task.
 
 ## Architecture
+![](/img/3dv/architecture.png)
+We utilize the latent representation of 3D auto-encoder to help train a latent representation from a depth image. The 3D auto-encoder is removed after the parametric model is trained. This pipeline is optimized for the encoders for the depth image and the 3D volumetric data and the shared generator is also optimised during
+training.
 
-![architecture](/img/3dv/architecture.png)
-![discriminators](/img/3dv/discriminators.png)
+## Discriminators
+![](/img/3dv/discriminators.png)
+To make the latent representation and the reconstructed 3D scene similar to each others, we apply two discriminators for both targets. In this manner, the latent representation of the depth produces the expected target more precisely compared to the latent representation of the ground truth volumetric data.
+
+## Our data format
+![](/img/3dv/data_format.png)
 
 ## Qualitative results
-
-![qualitative](/img/3dv/qualitative.png)
+![](/img/3dv/qualitative_results.png)

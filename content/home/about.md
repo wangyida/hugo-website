@@ -48,4 +48,5 @@ I get master degree in Pattern Recognition and Intelligent System Laboratory fro
 
 Several academic projects were sponsored by Microsoft and Google open source funding, two Google Summer of Codes projects are supervised by mentors in OpenCV which is [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D object pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj).
 
-**Curriculum Vitae** in: {{% staticref "files/resume_YidaWang.pdf" %}}English{{% /staticref %}}, {{% staticref "files/王一达简历.pdf" %}}中文{{% /staticref %}} and {{% staticref "files/fortsetzen_YidaWang.pdf" %}}Deutsche{{% /staticref %}}
+**Curriculum Vitae** in: {{% staticref "files/Resume/resume_YidaWang.pdf" %}}English{{% /staticref %}}, {{% staticref "files/Resume-Chinese/resume_YidaWang-Chinese.pdf" %}}中文{{% /staticref %}} and {{% staticref "files/Resume-German/resume_YidaWang-German.pdf" %}}Deutsche{{% /staticref %}}
+**Statement** :{{% staticref "files/Resume/statement_letter.pdf" %}}Letter{{% /staticref %}}
