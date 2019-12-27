@@ -9,11 +9,11 @@ pygmentsCodeFences = true
 pygmentsStyle = "native"
 pygmentsUseClasses =  true
 theme = "simplicity"
-title = "Simplicity - Hugo theme"
+title = "Yida Wang"
 [author]
-  gravatarEmail = "test@example.com"
+  gravatarEmail = "yidawang.cn@gmail.com"
   homepageText = "Simplicity"
-  name = "Przemysław `eshlox` Kołodziejczyk"
+  name = "Yida Wang"
   rss = "/posts/index.xml"
 [imaging]
   anchor = "smart"
