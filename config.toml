@@ -41,6 +41,51 @@ title = "Yida Wang"
   description = "A blog about everything."
   licence = "[Some Rights Reserved](http://creativecommons.org/licenses/by-sa/4.0/)."
   displayPostLanguage = true
+  [[params.social]]
+    icon = "google-plus"
+    icon_pack = "fa"
+    link = "https://plus.google.com/117093773000521533752"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://www.linkedin.com/in/yida-wang-910123/"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/wangyida"
+
+  [[params.social]]
+    icon = "facebook"
+    icon_pack = "fa"
+    link = "https://www.facebook.com/yida.wang.0123"
+
+  [[params.social]]
+    icon = "weibo"
+    icon_pack = "fa"
+    link = "https://m.weibo.cn/u/2827908014?uid=2827908014&luicode=10000011&lfid=100103type%3D3%26q%3DYeeeeda&featurecode=20000320"
+
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "https://scholar.google.de/citations?user=HpfFgYIAAAAJ&hl=en"
+
+  [[params.social]]
+    icon = "arxiv"
+    icon_pack = "ai"
+    link = "https://arxiv.org/abs/1705.08590"
+
+  [[params.social]]
+    icon = "orcid"
+    icon_pack = "ai"
+    link = "https://orcid.org/0000-0003-4519-9108"
+
+  [[params.social]]
+    icon = "researchgate"
+    icon_pack = "ai"
+    link = "https://www.researchgate.net/profile/Yida_Wang"
+
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
 [pygmentsOptions]
