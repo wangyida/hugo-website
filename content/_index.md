@@ -6,15 +6,11 @@ slug: /
 
 # Yida Wang
 
-Ph.D. student in computer vision and machine learning 
+[Publications](/posts/) &bull; [Categories](/categories/) &bull; [Tags](/tags/) &bull; [Photos](/photos/) &bull; [Projects](/projects/)
 
-[Chair for Computer Aided Medical Procedures & Augmented Reality](http://campar.in.tum.de/WebHome), [Fakultät für Informatik](http://www.in.tum.de) in [Technische Universität München](https://www.tum.de/). 
+I'm a Ph.D. student focused on computer vision and machine learning. [Chair for Computer Aided Medical Procedures & Augmented Reality](http://campar.in.tum.de/WebHome), [Fakultät für Informatik](http://www.in.tum.de) in [Technische Universität München](https://www.tum.de/). 
 Co-supervised by Dr. [Federico Tombari](http://campar.in.tum.de/Main/FedericoTombari) and Prof. Dr. [Nassir Navab](http://campar.in.tum.de/Main/NassirNavab) pursuing the topic of development of deep learning techniques for representation and processing of 3D data for complex visual tasks.
-
 Ever enrolled in competer vision projects sponsored by Microsoft and Google, *e.g.* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj).
 
 My *Curriculum Vitae* in: [English](/resume_yida_en.pdf), [中文简历](/resume_yida_cn.pdf) and [Deutsch](/resume_yida_de.pdf)
 
-[Posts](/posts/) &bull; [Categories](/categories/) &bull; [Tags](/tags/)
-
-[Photos](/photos/) &bull; [Projects](/projects/)
