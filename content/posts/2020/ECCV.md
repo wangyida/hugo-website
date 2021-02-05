@@ -2,12 +2,23 @@
 title: SoftPoolNet - Shape Descriptor for Point Cloud Completion and Classification
 date: 2020-08-25T10:15:01+02:00
 categories: [publication]
-tags: [machine learning, demo, computer vision]
+tags: [deep learning, computer vision, 3D completion]
 language: en
+cover:
+    image: "softpoolnet.png"
+    alt: 'caption for image'
+    caption: "cover image"
 slug: youtube
 ---
+| [paper](https://arxiv.org/pdf/2008.07358.pdf) | [code](https://github.com/wangyida/softpool) |
 
 {{< youtube zw4NlyxWlBg >}}
+
+# Abstrarct
+
+Point clouds are often the default choice for many applications as they exhibit more flexibility and efficiency than volumetric data. Nevertheless, their unorganized nature -- points are stored in an unordered way -- makes them less suited to be processed by deep learning pipelines. In this paper, we propose a method for 3D object completion and classification based on point clouds. We introduce a new way of organizing the extracted features based on their activations, which we name soft pooling. For the decoder stage, we propose regional convolutions, a novel operator aimed at maximizing the global activation entropy. Furthermore, inspired by the local refining procedure in Point Completion Network (PCN), we also propose a patch-deforming operation to simulate deconvolutional operations for point clouds. This paper proves that our regional activation can be incorporated in many point cloud architectures like AtlasNet and PCN, leading to better performance for geometric completion. We evaluate our approach on different 3D tasks such as object completion and classification, achieving state-of-the-art accuracy.
+
+# Cite
 
 If you find this work useful in yourr research, please cite:
 
@@ -23,7 +34,3 @@ If you find this work useful in yourr research, please cite:
   year      = {2020}
 }
 ```
-
-# Abstrarct
-
-Point clouds are often the default choice for many applications as they exhibit more flexibility and efficiency than volumetric data. Nevertheless, their unorganized nature -- points are stored in an unordered way -- makes them less suited to be processed by deep learning pipelines. In this paper, we propose a method for 3D object completion and classification based on point clouds. We introduce a new way of organizing the extracted features based on their activations, which we name soft pooling. For the decoder stage, we propose regional convolutions, a novel operator aimed at maximizing the global activation entropy. Furthermore, inspired by the local refining procedure in Point Completion Network (PCN), we also propose a patch-deforming operation to simulate deconvolutional operations for point clouds. This paper proves that our regional activation can be incorporated in many point cloud architectures like AtlasNet and PCN, leading to better performance for geometric completion. We evaluate our approach on different 3D tasks such as object completion and classification, achieving state-of-the-art accuracy.
