@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.7.8)  30 OCT 2021 15:20
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.15)  18 DEC 2021 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -862,35 +862,9 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 (/usr/local/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2020/10/19 v3.8.6 Configuration file for xeCJK package
 ))
-
-! Package fontspec Error: The font "SimSun" cannot be found.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.30 
-     
-? 
-
-! Package fontspec Error: The font "SimSun" cannot be found.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.30 
-     
-? 
-
-! Package fontspec Error: The font "SimSun" cannot be found.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.30 
-     
-? 
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 30.
+
 (./resume_YidaWang.aux)
 \openout1 = `resume_YidaWang.aux'.
 
@@ -1031,110 +1005,22 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.47441pt on input line 74.
 
-! Font TU/SimSun(0)/m/n/32=SimSun/OT at 32.0pt not loadable: Metric (TFM) file 
-or installed font not found.
-<to be read again> 
-                   relax 
-l.74 
-     
-? 
-Missing character: There is no 王 (U+738B) in font [fonts/Roboto-Thin]/OT:script
-=DFLT;language=dflt;!
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/b/n' undefined
 (Font)              using `TU/SimSun(0)/m/n' instead on input line 74.
 
-Missing character: There is no 一 (U+4E00) in font [fonts/Roboto-Bold]/OT:script
-=DFLT;language=dflt;!
-Missing character: There is no 达 (U+8FBE) in font [fonts/Roboto-Bold]/OT:script
-=DFLT;language=dflt;!
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 7.6pt on input line 74.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
 (Font)              scaled to size 7.6pt on input line 74.
-! Font TU/SimSun(0)/m/sc/7.6=SimSun/OT at 7.6pt not loadable: Metric (TFM) file
- or installed font not found.
-<to be read again> 
-                   relax 
-l.74 
-     
-? 
-Missing character: There is no 博 (U+535A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 士 (U+58EB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 计 (U+8BA1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 算 (U+7B97) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 机 (U+673A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 科 (U+79D1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 信 (U+4FE1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 息 (U+606F) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
+
+LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sc' undefined
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 74.
+
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
 (Font)              using `TU/SimSun(0)/m/n' instead on input line 74.
 
-! Font TU/SimSun(0)/m/n/8=SimSun/OT at 8.0pt not loadable: Metric (TFM) file or
- installed font not found.
-<to be read again> 
-                   relax 
-l.74 
-     
-? 
-Missing character: There is no 德 (U+5FB7) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 国 (U+56FD) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-! Font TU/SimSun(0)/m/it/8=SimSun/OT at 8.0pt not loadable: Metric (TFM) file o
-r installed font not found.
-<to be read again> 
-                   relax 
-l.74 
-     
-? 
-Missing character: There is no 巴 (U+5DF4) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 伐 (U+4F10) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 利 (U+5229) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 亚 (U+4E9A) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 慕 (U+6155) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 尼 (U+5C3C) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 黑 (U+9ED1) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no ， (U+FF0C) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 慕 (U+6155) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 尼 (U+5C3C) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 黑 (U+9ED1) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 工 (U+5DE5) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 业 (U+4E1A) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 大 (U+5927) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no 学 (U+5B66) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no （ (U+FF08) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
-Missing character: There is no ） (U+FF09) in font [fonts/Roboto-Italic]/OT:scri
-pt=DFLT;language=dflt;!
 LaTeX Font Info:    Calculating math sizes for size <6.8> on input line 74.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 6.80072pt on input line 74.
@@ -1158,47 +1044,10 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 6.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 6.
-
-! Font TU/SimSun(0)/b/n/16=SimSun/OT at 16.0pt not loadable: Metric (TFM) file 
-or installed font not found.
-<to be read again> 
-                   relax 
-l.6 \cvsection{教育经历}
-                    
-? 
-Missing character: There is no 教 (U+6559) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 育 (U+80B2) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 经 (U+7ECF) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 历 (U+5386) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 20.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 20.
-! Font TU/SimSun(0)/b/n/10=SimSun/OT at 10.0pt not loadable: Metric (TFM) file 
-or installed font not found.
-<to be read again> 
-                   relax 
-l.20 }
-      
-? 
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 工 (U+5DE5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 業 (U+696D) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 大 (U+5927) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 20.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
@@ -1208,51 +1057,14 @@ t line 20.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
 (Font)              scaled to size 9.0pt on input line 20.
 
+
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sl' undefined
 (Font)              using `TU/SimSun(0)/m/n' instead on input line 20.
 
-! Font TU/SimSun(0)/m/n/9=SimSun/OT at 9.0pt not loadable: Metric (TFM) file or
- installed font not found.
-<to be read again> 
-                   relax 
-l.20 }
-      
-? 
-Missing character: There is no 德 (U+5FB7) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 国 (U+56FD) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
 (Font)              scaled to size 8.0pt on input line 20.
-! Font TU/SimSun(0)/m/sc/8=SimSun/OT at 8.0pt not loadable: Metric (TFM) file o
-r installed font not found.
-<to be read again> 
-                   relax 
-l.20 }
-      
-? 
-Missing character: There is no 计 (U+8BA1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 算 (U+7B97) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 机 (U+673A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 科 (U+79D1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 博 (U+535A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 士 (U+58EB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
 (Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
@@ -1261,137 +1073,6 @@ able
 t line 20.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 20.
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 郵 (U+90F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 電 (U+96FB) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 大 (U+5927) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-! Font TU/SimSun(0)/m/sl/9=SimSun/OT at 9.0pt not loadable: Metric (TFM) file o
-r installed font not found.
-<to be read again> 
-                   relax 
-l.33 }
-      
-? 
-! Interruption.
-extract@font ...ont font@name external@font relax 
-                                                  font@name relax csname f@e...
-l.33 }
-      
-? 
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 智 (U+667A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 能 (U+80FD) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 系 (U+7CFB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 统 (U+7EDF) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 和 (U+548C) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 模 (U+6A21) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 式 (U+5F0F) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 识 (U+8BC6) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 别 (U+522B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 硕 (U+7855) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 士 (U+58EB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 均 (U+5747) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 分 (U+5206) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 优 (U+4F18) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 秀 (U+79C0) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 硕 (U+7855) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 士 (U+58EB) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 毕 (U+6BD5) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 业 (U+4E1A) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 生 (U+751F) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 郵 (U+90F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 電 (U+96FB) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 大 (U+5927) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 通 (U+901A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 信 (U+4FE1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 工 (U+5DE5) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 程 (U+7A0B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 士 (U+58EB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 均 (U+5747) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 分 (U+5206) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 优 (U+4F18) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 秀 (U+79C0) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 本 (U+672C) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 科 (U+79D1) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 毕 (U+6BD5) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 业 (U+4E1A) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 生 (U+751F) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
 ) (./cv-sections/writing.tex
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 8.00085pt on input line 35.
@@ -1405,705 +1086,31 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 35.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 35.
-Missing character: There is no 王 (U+738B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 一 (U+4E00) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 达 (U+8FBE) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 简 (U+7B80) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 历 (U+5386) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
  [1
 
 ]) (./cv-sections/honors.tex
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 項 (U+9805) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 與 (U+8207) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 資 (U+8CC7) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 助 (U+52A9) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 22.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 9.0pt on input line 22.
 
-! Font TU/SimSun(0)/b/n/9=SimSun/OT at 9.0pt not loadable: Metric (TFM) file or
- installed font not found.
-<to be read again> 
-                   relax 
-l.22 {2020}
-            % Date(s)
-? 
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 德 (U+5FB7) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
 
 Package hyperref Warning: Suppressing link with empty target on input line 29.
 
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 家 (U+5BB6) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 優 (U+512A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 秀 (U+79C0) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 自 (U+81EA) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 費 (U+8CBB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 留 (U+7559) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 生 (U+751F) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 金 (U+91D1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 德 (U+5FB7) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
 
 Package hyperref Warning: Suppressing link with empty target on input line 36.
 
-Missing character: There is no 博 (U+535A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 士 (U+58EB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 全 (U+5168) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 奖 (U+5956) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 德 (U+5FB7) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 德 (U+5FB7) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 国 (U+56FD) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 家 (U+5BB6) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 奖 (U+5956) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 金 (U+91D1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 一 (U+4E00) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 等 (U+7B49) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 邮 (U+90AE) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 创 (U+521B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 新 (U+65B0) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 奖 (U+5956) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 二 (U+4E8C) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 等 (U+7B49) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 微 (U+5FAE) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 软 (U+8F6F) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 开 (U+5F00) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 源 (U+6E90) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 挑 (U+6311) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 战 (U+6218) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 赛 (U+8D5B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 美 (U+7F8E) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 西 (U+897F) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 雅 (U+96C5) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 圖 (U+5716) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 一 (U+4E00) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 等 (U+7B49) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 奖 (U+5956) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 金 (U+91D1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 市 (U+5E02) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 优 (U+4F18) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 秀 (U+79C0) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 硕 (U+7855) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 士 (U+58EB) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 毕 (U+6BD5) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 业 (U+4E1A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 生 (U+751F) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 決 (U+6C7A) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 賽 (U+8CFD) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 前 (U+524D) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 天 (U+5929) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 池 (U+6C60) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 大 (U+5927) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 数 (U+6570) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 据 (U+636E) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 竞 (U+7ADE) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 赛 (U+8D5B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 杭 (U+676D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 州 (U+5DDE) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 一 (U+4E00) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 等 (U+7B49) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 奖 (U+5956) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 金 (U+91D1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 勵 (U+52F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 市 (U+5E02) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 优 (U+4F18) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 秀 (U+79C0) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 本 (U+672C) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 科 (U+79D1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 毕 (U+6BD5) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 业 (U+4E1A) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 生 (U+751F) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 一 (U+4E00) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 等 (U+7B49) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 合 (U+5408) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 肥 (U+80A5) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 家 (U+5BB6) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 、 (U+3001) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 省 (U+7701) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 級 (U+7D1A) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 獎 (U+734E) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 項 (U+9805) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 全 (U+5168) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 高 (U+9AD8) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 生 (U+751F) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 數 (U+6578) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 、 (U+3001) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 物 (U+7269) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 理 (U+7406) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 、 (U+3001) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 化 (U+5316) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 競 (U+7AF6) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 賽 (U+8CFD) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 大 (U+5927) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 連 (U+9023) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 金 (U+91D1) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 、 (U+3001) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 銅 (U+9285) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 牌 (U+724C) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 首 (U+9996) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 度 (U+5EA6) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 高 (U+9AD8) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 校 (U+6821) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 田 (U+7530) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 徑 (U+5F91) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 運 (U+904B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 動 (U+52D5) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 會 (U+6703) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ， (U+FF0C) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 欄 (U+6B04) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ， (U+FF0C) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 銅 (U+9285) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 牌 (U+724C) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 国 (U+56FD) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 际 (U+9645) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 铁 (U+94C1) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 人 (U+4EBA) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 三 (U+4E09) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 项 (U+9879) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 赛 (U+8D5B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
 ) (./cv-sections/experience.tex
-Missing character: There is no 職 (U+8077) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 業 (U+696D) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 經 (U+7D93) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 歷 (U+6B77) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 西 (U+897F) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 雅 (U+96C5) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 圖 (U+5716) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 美 (U+7F8E) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 人 (U+4EBA) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 眼 (U+773C) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 重 (U+91CD) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 建 (U+5EFA) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 資 (U+8CC7) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 助 (U+52A9) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 開 (U+958B) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 源 (U+6E90) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 軟 (U+8EDF) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 件 (U+4EF6) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 開 (U+958B) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 發 (U+767C) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 項 (U+9805) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 目 (U+76EE) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ， (U+FF0C) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 開 (U+958B) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 發 (U+767C) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 和 (U+548C) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 維 (U+7DAD) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 護 (U+8B77) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 和 (U+548C) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 在 (U+5728) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 線 (U+7DDA) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 演 (U+6F14) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 示 (U+793A) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 9.00096pt on input line 36.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 8.99904pt on input line 36.
 ) (./cv-sections/skills.tex
-Missing character: There is no 技 (U+6280) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 能 (U+80FD) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 概 (U+6982) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 要 (U+8981) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 计 (U+8BA1) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 算 (U+7B97) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 机 (U+673A) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 模 (U+6A21) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 式 (U+5F0F) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 识 (U+8BC6) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 别 (U+522B) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 机 (U+673A) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 器 (U+5668) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 学 (U+5B66) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 习 (U+4E60) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 外 (U+5916) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 语 (U+8BED) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 英 (U+82F1) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 语 (U+8BED) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 德 (U+5FB7) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 语 (U+8BED) in font [SourceSansPro-Light.otf]/OT:
-script=latn;language=dflt;mapping=tex-text;!
-
-Overfull \hbox (26.48248pt too wide) in alignment at lines 11--33
+Overfull \hbox (50.96246pt too wide) in alignment at lines 11--33
 [] [] 
  []
 
-) (./cv-sections/extracurricular.tex
-Missing character: There is no 其 (U+5176) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 他 (U+4ED6) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 活 (U+6D3B) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 动 (U+52A8) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 工 (U+5DE5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 業 (U+696D) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 大 (U+5927) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 德 (U+5FB7) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 慕 (U+6155) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 尼 (U+5C3C) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 黑 (U+9ED1) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 講 (U+8B1B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 師 (U+5E2B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 郵 (U+90F5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 電 (U+96FB) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 大 (U+5927) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no ， (U+FF0C) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 信 (U+4FE1) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 息 (U+606F) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 與 (U+8207) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 通 (U+901A) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 信 (U+4FE1) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 工 (U+5DE5) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 程 (U+7A0B) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 學 (U+5B78) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 院 (U+9662) in font [SourceSansPro-Bold.otf]/OT:s
-cript=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 北 (U+5317) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 京 (U+4EAC) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 中 (U+4E2D) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 國 (U+570B) in font [SourceSansPro-LightIt.otf]/O
-T:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 班 (U+73ED) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 長 (U+9577) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-)
-Missing character: There is no 王 (U+738B) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 一 (U+4E00) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 达 (U+8FBE) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 简 (U+7B80) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
-Missing character: There is no 历 (U+5386) in font [SourceSansPro-Regular.otf]/O
-T:script=latn;language=dflt;+smcp;mapping=tex-text;!
- [2] (./resume_YidaWang.aux)
+) (./cv-sections/extracurricular.tex) [2] (./resume_YidaWang.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2111,11 +1118,11 @@ Package rerunfilecheck Info: File `resume_YidaWang.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33036 strings out of 476919
- 673155 string characters out of 5821841
- 1175821 words of memory out of 5000000
- 52444 multiletter control sequences out of 15000+600000
- 409596 words of font info for 127 fonts, out of 8000000 for 9000
+ 33037 strings out of 476919
+ 672868 string characters out of 5821839
+ 1174849 words of memory out of 5000000
+ 52434 multiletter control sequences out of 15000+600000
+ 409676 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  127i,12n,130p,571b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
 
