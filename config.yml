@@ -1,148 +1,150 @@
 baseURL: "https://wangyida.github.io/"
 title: Yida Wang
 paginate: 8
-theme: hugo-PaperMod
+theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
-# googleAnalytics: UA-123-45
+googleAnalytics: UA-123-45
 
 minify:
-  disableXML: true
-  # minifyOutput: true
-
-languages:
-  en:
-    languageName: "English"
-    weight: 1
-    menu:
-      main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Tags
-          url: tags/
-          weight: 10
-
-  l2:
-    languageName: "German"
-    weight: 2
-    title: Yida Wang
-    profileMode:
-      enabled: true
-      title: Yida Wang
-      imageUrl: "Photo_race.jpg"
-      imageTitle: my image
-      imageWidth: 120
-      imageHeight: 120
-      subtitle: "Ph.D. student focused on computer vision and machine learning"
-      buttons:
-        - name: Posts
-          url: posts
-        - name: Tags
-          url: tags
-    menu:
-      main:
-        - name: Archive
-          url: archives/
-          weight: 5
-        - name: Tags
-          url: tags
-          weight: 10
-        - name: Categories
-          url: categories
-          weight: 10
-        - name: Series
-          url: series
-          weight: 10
-
-
-  l3:
-    languageName: "中文"
-    languagedirection: rtl
-    weight: 3
-    title: 王一达
-    homeInfoParams:
-      Title: "王一达"
-      Content: 中文页面正在更新，请参考中文简历
-    menu:
-      main:
-        - name: Tags
-          url: tags
-          weight: 10
+    disableXML: true
+    minifyOutput: true
 
 params:
-  env: production
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
-  author: Me
-  # author: ["Me", "You"] # multiple authors
-  ShowReadingTime: true
-  defaultTheme: auto
-  ShowShareButtons: true
-  displayFullLangName: true
-  images: "https://github.com/wangyida/website-hugo/blob/master/images/Photo_lab.jpg"
-  cover:
-    responsiveImages: false
-    linkFullImages: false
-  # assets:
-  #   favicon: '<path / external url>'
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: ExampleSite
+    description: "ExampleSite description"
+    keywords: [Blog, Portfolio, PaperMod]
+    author: Yida
+    # author: ["Me", "You"] # multiple authors
+    images: ["http://campar.in.tum.de/twiki/pub/Main/YidaWang/YidaWang_CAMP.png"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
 
-  profileMode:
-    enabled: false
-    title: Yida Wang
-    imageUrl: "https://github.com/wangyida/website-hugo/blob/master/images/Photo_lab.jpg"
-    imageTitle: Yida Wang
-    imageWidth: 120
-    imageHeight: 120
-    buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
 
-  homeInfoParams:
-    Title: "Yida Wang"
-    Content: >
-      I'm a Ph.D. student focused on computer vision and machine learning from [Technische Universität München](https://www.tum.de/), with topic of deep learning techniques for representation and processing of 3D data for complex visual tasks. Ever enrolled in competer vision projects sponsored by Microsoft and Google, *e.g.* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj). [Presentation](/Presentation_Yida.pdf)
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/icon_Y.png"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "/icon_Y32x32.png"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "/icon_Y32x32.png"
 
-      > - **Download**: [My Resume](/resume_yida_en.pdf), [中文简历](/resume_yida_cn.pdf) and [Lebenslauf](/resume_yida_de.pdf)
+    label:
+        text: ". WANG"
+        icon: /icon_Y.png
+        iconHeight: 28
 
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: Yida Wang
+        subtitle: "Ph.D. student focused on computer vision and machine learning"
+        imageUrl: "Photo_race.jpg"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
 
-  socialIcons:
-    - name: linkedin
-      url: "https://www.linkedin.com/in/yida-wang-910123"
-    - name: github
-      url: "https://github.com/wangyida"
-    - name: youtube
-      url: "https://www.youtube.com/channel/UCvu4OW3TufWFsj-vNrzeEiw"
-    - name: facebook
-      url: "https://www.facebook.com/yida.wang.0123"
+    # home-info mode
+    homeInfoParams:
+        Title: "Yida WANG \U00002728"
+        Content: >
+          I'm a Ph.D. student focused on computer vision and machine learning from [Technische Universität München](https://www.tum.de/), with topic of deep learning techniques for representation and processing of 3D data for complex visual tasks. Ever enrolled in competer vision projects sponsored by Microsoft and Google, *e.g.* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj). [Presentation](/Presentation_Yida.pdf)
 
-taxonomies:
-  category: categories
-  tag: tags
-  series: series
+          > - **Download**: [My Resume](/resume_yida_en.pdf), [中文简历](/resume_yida_cn.pdf) and [Lebenslauf](/resume_yida_de.pdf)
 
-privacy:
-  vimeo:
-    disabled: false
-    simple: true
+    socialIcons:
+        - name: linkedin
+          url: "https://www.linkedin.com/in/yida-wang-910123"
+        - name: googlescholar
+          url: "https://scholar.google.com/citations?user=HpfFgYIAAAAJ&hl=en"
+        - name: github
+          url: "https://github.com/wangyida"
+        - name: youtube
+          url: "https://www.youtube.com/channel/UCvu4OW3TufWFsj-vNrzeEiw"
+        - name: facebook
+          url: "https://www.facebook.com/yida.wang.0123"
+        - name: cv
+          url: "https://wangyida.github.io/resume_yida_en.pdf"   
 
-  twitter:
-    disabled: false
-    enableDNT: true
-    simple: true
+    analytics:
+        google:
+            SiteVerificationTag: "XYZabc"
+        bing:
+            SiteVerificationTag: "XYZabc"
+        yandex:
+            SiteVerificationTag: "XYZabc"
 
-  instagram:
-    disabled: false
-    simple: true
+    cover:
+        hidden: false # hide everywhere but not in structured data
+        hiddenInList: false # hide on list pages and home
+        hiddenInSingle: false # hide on single page
 
-  youtube:
-    disabled: false
-    privacyEnhanced: true
+    editPost:
+        URL: "https://github.com/<path_to_repo>/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
 
-services:
-  instagram:
-    disableInlineCSS: true
-  twitter:
-    disableInlineCSS: true
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: archive
+          name: archive
+          url: archives/
+          weight: 5
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
+        - identifier: labsite
+          name: Lab-site
+          url: http://campar.in.tum.de/Main/YidaWang
+          weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
+
