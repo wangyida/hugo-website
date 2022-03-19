@@ -1,11 +1,11 @@
 ---
 title: Variational Object-aware 3D Hand Pose from a Single RGB Image
 date: 2019-06-01T10:15:01+02:00
-categories: [publication]
-tags: [deep learning, object detection, key-points detection, variational inference, computer vision, tracking]
+categories: [journal]
+tags: [deep learning, object detection, key-points detection, variational inference, computer vision, tracking, IROS, RAL]
 language: en
 cover:
-    image: "vo-hand.png"
+    image: "teasers/thesis_teaser_ral19.png"
     alt: 'caption for image'
     caption: "cover image"
 slug: youtube
@@ -20,7 +20,7 @@ We propose an approach to estimate the 3D pose of a human hand while grasping ob
 
 # Cite
 
-If you find this work useful in yourr research, please cite:
+If you find this work useful in your research, please cite:
 
 ```bash
 @article{gao2019variational,

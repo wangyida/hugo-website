@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.15)  20 DEC 2021 00:00
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.15)  15 MAR 2022 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,6 +911,10 @@ LaTeX Info: Redefining \nameref on input line 69.
 \@outlinefile=\write6
 \openout6 = `resume_YidaWang.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 \headertextwidth=\skip82
 \headerphotowidth=\skip83
 \photodim=\skip84
@@ -956,63 +960,233 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 6.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 20.
+(Font)              scaled to size 10.0pt on input line 18.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 20.
+(Font)              scaled to size 10.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 18.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 18.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 18.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 18.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 18.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 18.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/it' will be
+(Font)              scaled to size 10.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+(Font)              scaled to size 7.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+(Font)              scaled to size 5.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
+(Font)              scaled to size 7.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 18.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
+(Font)              scaled to size 7.0pt on input line 18.
+
+Underfull \hbox (badness 10000) in alignment at lines 18--18
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 28--28
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 37--37
+[] 
+ []
+
+) (./cv-sections/writing.tex
+Underfull \hbox (badness 10000) in alignment at lines 19--19
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 19--20
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 26--26
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 26--28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 34--34
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 34--35
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 41--41
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 41--42
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 48--48
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 48--49
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 55--55
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 55--56
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 62--62
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 62--63
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 69--69
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 69--70
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 76--76
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 76--77
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 85--85
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 85--86
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 94--94
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 94--95
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 103--103
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 103--104
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 112--112
+[] 
+ []
+
+
+Overfull \hbox (17.57474pt too wide) in paragraph at lines 112--113
+[][] 
+ []
+
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 117.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
+(Font)              scaled to size 8.0pt on input line 117.
+[1
+
+]) (./cv-sections/honors.tex
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 23.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 23.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 23.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 23.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 23.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 23.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 23.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 23.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 23.
+
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 20.
+(Font)              scaled to size 9.0pt on input line 23.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 20.
+t line 23.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 20.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 20.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 20.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 20.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 20.
+(Font)              scaled to size 9.0pt on input line 23.
+) (./cv-sections/experience.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 20.
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 20.
+t line 24.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 20.
-) (./cv-sections/writing.tex
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 35.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 35.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 35.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 35.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 35.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 35.
- [1
-
-])
-(./cv-sections/honors.tex
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 22.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 22.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 29.
-
-) (./cv-sections/experience.tex
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 37.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 37.
+(Font)              scaled to size 8.0pt on input line 24.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 36.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 36.
 ) (./cv-sections/skills.tex
 Overfull \hbox (55.94247pt too wide) in alignment at lines 11--33
 [] [] 
@@ -1023,12 +1197,12 @@ Package rerunfilecheck Info: File `resume_YidaWang.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31459 strings out of 476919
- 626090 string characters out of 5821839
- 1118914 words of memory out of 5000000
- 50884 multiletter control sequences out of 15000+600000
- 409604 words of font info for 128 fonts, out of 8000000 for 9000
+ 31495 strings out of 476919
+ 627601 string characters out of 5821839
+ 1115201 words of memory out of 5000000
+ 50907 multiletter control sequences out of 15000+600000
+ 409530 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 127i,12n,130p,553b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 127i,13n,130p,553b,831s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume_YidaWang.pdf (2 pages).

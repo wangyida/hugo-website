@@ -1,16 +1,16 @@
 ---
 title: ForkNet - Multi-Branch Volumetric Semantic Completion From a Single Depth Image
 date: 2019-11-01T10:15:01+02:00
-categories: [publication]
-tags: [deep learning, computer vision, 3D completion, adversarial training]
+categories: [conference]
+tags: [deep learning, computer vision, 3D completion, adversarial training, ICCV]
 language: en
 cover:
-    image: "forknet.png"
+    image: "teasers/thesis_teaser_iccv19.png"
     alt: 'caption for image'
     caption: "cover image"
 slug: youtube
 ---
-| [paper](https://arxiv.org/pdf/1909.01106.pdf) | [code](https://github.com/wangyida/forknet) |
+| [paper](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_ForkNet_Multi-Branch_Volumetric_Semantic_Completion_From_a_Single_Depth_Image_ICCV_2019_paper.pdf) | [code](https://github.com/wangyida/forknet) |
 
 {{< youtube 1WZ16bGff1o >}}
 
@@ -20,7 +20,7 @@ We propose a novel model for 3D semantic completion from a single depth image, b
 
 # Cite
 
-If you find this work useful in yourr research, please cite:
+If you find this work useful in your research, please cite:
 
 ```bash
 @inproceedings{wang2019forknet,
@@ -31,4 +31,3 @@ If you find this work useful in yourr research, please cite:
   year={2019}
 }
 ```
-

@@ -1,8 +1,8 @@
 ---
 title: Self-restraint Object Recognition by Model Based CNN Learning
 date: 2016-04-01T10:15:01+02:00
-categories: [publication]
-tags: [deep learning, computer vision, object detection]
+categories: [conference]
+tags: [deep learning, computer vision, object detection, ICIP]
 language: en
 slug: youtube
 ---
@@ -13,7 +13,7 @@ CNN has shown excellent performance on object recognition based on huge amount o
 
 # Cite
 
-If you find this work useful in yourr research, please cite:
+If you find this work useful in your research, please cite:
 
 ```bash
 @inproceedings{wang2016self,

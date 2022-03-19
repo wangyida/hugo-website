@@ -1,8 +1,8 @@
 ---
 title: Generative Model with Coordinate Metric Learning for Object Recognition Based on 3D Models
 date: 2017-11-15T10:15:01+02:00
-categories: [publication]
-tags: [deep learning, computer vision, variational inference]
+categories: [journal]
+tags: [deep learning, computer vision, variational inference, TIP]
 language: en
 slug: youtube
 ---
@@ -13,7 +13,7 @@ Collecting data for deep learning is so tedious which makes it hard to establish
 
 # Cite
 
-If you find this work useful in yourr research, please cite:
+If you find this work useful in your research, please cite:
 
 ```bash
 @article{wang2018generative,

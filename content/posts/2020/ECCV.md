@@ -1,16 +1,16 @@
 ---
 title: SoftPoolNet - Shape Descriptor for Point Cloud Completion and Classification
 date: 2020-08-25T10:15:01+02:00
-categories: [publication]
-tags: [deep learning, computer vision, 3D completion]
+categories: [conference]
+tags: [deep learning, computer vision, 3D completion, ECCV]
 language: en
 cover:
-    image: "softpoolnet.png"
+    image: "teasers/thesis_teaser_eccv20.png"
     alt: 'caption for image'
     caption: "cover image"
 slug: youtube
 ---
-| [paper](https://arxiv.org/pdf/2008.07358.pdf) | [code](https://github.com/wangyida/softpool) |
+| [paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123480069.pdf) | [code](https://github.com/wangyida/softpool) |
 
 {{< youtube zw4NlyxWlBg >}}
 
@@ -20,17 +20,15 @@ Point clouds are often the default choice for many applications as they exhibit 
 
 # Cite
 
-If you find this work useful in yourr research, please cite:
+If you find this work useful in your research, please cite:
 
 ```bash
-@article{DBLP:journals/corr/abs-2008-07358,
-  author    = {Yida Wang and
-               David Joseph Tan and
-               Nassir Navab and
-               Federico Tombari},
-  title     = {SoftPoolNet: Shape Descriptor for Point Cloud Completion and Classification},
-  journal   = {CoRR},
-  volume    = {abs/2008.07358},
-  year      = {2020}
+@inproceedings{wang2020softpoolnet,
+  title={Softpoolnet: Shape descriptor for point cloud completion and classification},
+  author={Wang, Yida and Tan, David Joseph and Navab, Nassir and Tombari, Federico},
+  booktitle={European Conference on Computer Vision},
+  pages={70--85},
+  year={2020},
+  organization={Springer}
 }
 ```

@@ -1,8 +1,8 @@
 ---
 title: Zigzagnet- Efficient deep learning for real object recognition based on 3D models
 date: 2016-09-01T10:15:01+02:00
-categories: [publication]
-tags: [deep learning, computer vision, quantization]
+categories: [conference]
+tags: [deep learning, computer vision, quantization, ACCV]
 language: en
 slug: youtube
 ---
@@ -13,7 +13,7 @@ Effective utilization on texture-less 3D models for deep learning is significant
 
 # Cite
 
-If you find this work useful in yourr research, please cite:
+If you find this work useful in your research, please cite:
 
 ```bash
 @inproceedings{wang2016zigzagnet,

@@ -1,11 +1,11 @@
 ---
 title: Adversarial Semantic Scene Completion from a Single Depth Image
 date: 2018-10-09T10:15:01+02:00
-categories: [publication]
-tags: [deep learning, computer vision, adversarial training, 3D completion]
+categories: [conference]
+tags: [deep learning, computer vision, adversarial training, 3D completion, 3DV]
 language: en
 cover:
-    image: "3dv-18.png"
+    image: "teasers/thesis_teaser_3dv18.png"
     alt: 'caption for image'
     caption: "cover image"
 slug: youtube
@@ -20,7 +20,7 @@ We propose a method to reconstruct, complete and semantically label a 3D scene f
 
 # Cite 
 
-If you find this work useful in yourr research, please cite:
+If you find this work useful in your research, please cite:
 
 ```bash
 @inproceedings{wang2018adversarial,

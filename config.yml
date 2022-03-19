@@ -45,26 +45,24 @@ params:
         favicon: "/icon_Y.png"
         favicon16x16: "<link / abs url>"
         favicon32x32: "/icon_Y32x32.png"
-        apple_touch_icon: "<link / abs url>"
+        apple_touch_icon: "/icon_Y32x32.png"
         safari_pinned_tab: "/icon_Y32x32.png"
 
     label:
         text: ". WANG"
         icon: /icon_Y.png
-        iconHeight: 28
+        iconHeight: 35
 
     # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
-        title: Yida Wang
+        title: Yida WANG
         subtitle: "Ph.D. student focused on computer vision and machine learning"
-        imageUrl: "Photo_race.jpg"
+        imageUrl: "Photo_home.jpg"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
         buttons:
-            - name: Posts
-              url: posts
             - name: Archives
               url: archives
             - name: Tags
