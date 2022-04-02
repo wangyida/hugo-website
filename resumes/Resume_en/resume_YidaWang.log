@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.15)  15 MAR 2022 12:27
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.11.15)  1 APR 2022 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,10 +911,6 @@ LaTeX Info: Redefining \nameref on input line 69.
 \@outlinefile=\write6
 \openout6 = `resume_YidaWang.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \headertextwidth=\skip82
 \headerphotowidth=\skip83
 \photodim=\skip84
@@ -1199,7 +1195,7 @@ Package rerunfilecheck Info: File `resume_YidaWang.out' has not changed.
 Here is how much of TeX's memory you used:
  31495 strings out of 476919
  627601 string characters out of 5821839
- 1115201 words of memory out of 5000000
+ 1115228 words of memory out of 5000000
  50907 multiletter control sequences out of 15000+600000
  409530 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
