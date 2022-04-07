@@ -57,13 +57,13 @@ params:
     profileMode:
         enabled: false # needs to be explicitly set
         title: Yida WANG
-        subtitle: "Ph.D. student focused on computer vision and machine learning"
+        subtitle: "I'm a Ph.D. student focused on computer vision and machine learning from [Technische Universität München](https://www.tum.de/)"
         imageUrl: "Photo_home.jpg"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
         buttons:
-            - name: Archives
+            - name: Publications
               url: archives
             - name: Tags
               url: tags
@@ -80,9 +80,9 @@ params:
         - name: linkedin
           url: "https://www.linkedin.com/in/yida-wang-910123"
         - name: qq
-          url: "QRcodes/QRcodes_qq.pdf"
+          url: "https://wangyida.github.io/QRcodes/QRcode_qq.pdf"
         - name: wechat
-          url: "QRcodes/QRcodes_wechat.pdf"
+          url: "https://wangyida.github.io/QRcodes/QRcode_wechat.pdf"
         - name: googlescholar
           url: "https://scholar.google.com/citations?user=HpfFgYIAAAAJ&hl=en"
         - name: github
@@ -94,7 +94,7 @@ params:
         - name: cv
           url: "https://wangyida.github.io/resume_yida_en.pdf"   
         - name: alipay
-          url: "QRcodes/QRcodes_alipay.pdf"
+          url: "https://wangyida.github.io/QRcodes/QRcode_alipay.pdf"
 
     analytics:
         google:
