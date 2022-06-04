@@ -10,7 +10,7 @@ cover:
     caption: "cover image"
 slug: youtube
 ---
-| [paper](https://ieeexplore.ieee.org/document/8770083) | [code](https://github.com/wangyida/VO-handpose) |
+> Re-direct to the full [**PAPER**](https://ieeexplore.ieee.org/document/8770083) and [**CODE**](https://github.com/wangyida/VO-handpose) |
 
 {{< youtube tSTQ2NTqB4A >}}
 

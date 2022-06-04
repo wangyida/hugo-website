@@ -10,7 +10,9 @@ cover:
     caption: "Semantic scene completion results on the CompleteScanNet dataset"
 ---
 
-> Re-direct to the full [**PAPER**]() and [**CODE**]() 
+> Re-direct to the full [**PAPER**](https://arxiv.org/pdf/2203.16600v1.pdf) and [**CODE**](https://github.com/wangyida/disp3d) 
+
+{{< youtube -rSLpHYO78M >}}
 
 # Abstrarct
 | Completing a car |  |

@@ -10,7 +10,7 @@ cover:
     caption: "cover image"
 slug: youtube
 ---
-| [paper](https://arxiv.org/pdf/1810.10901.pdf) | [code](https://github.com/wangyida/gan-depth-semantic3d) |
+> Re-direct to the full [**PAPER**](https://arxiv.org/pdf/1810.10901.pdf) and [**CODE**](https://github.com/wangyida/gan-depth-semantic3d) |
 
 {{< youtube udvBhkupwXE >}}
 

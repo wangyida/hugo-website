@@ -42,15 +42,15 @@ params:
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
-        favicon: "/icon_Y.png"
+        favicon: "/logo_yida.png"
         favicon16x16: "<link / abs url>"
         favicon32x32: "/icon_Y32x32.png"
-        apple_touch_icon: "/icon_Y32x32.png"
-        safari_pinned_tab: "/icon_Y32x32.png"
+        apple_touch_icon: "/logo_yida.png"
+        safari_pinned_tab: "/logo_yida.png"
 
     label:
         text: ". WANG"
-        icon: /icon_Y.png
+        icon: /logo_yida_long.png
         iconHeight: 35
 
     # profile-mode

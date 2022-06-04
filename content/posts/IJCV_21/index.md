@@ -10,7 +10,7 @@ cover:
     caption: "cover image"
 slug: youtube
 ---
-| [paper](https://link.springer.com/article/10.1007/s11263-022-01588-7) | [code]() |
+> Re-direct to the full [**PAPER**](https://link.springer.com/article/10.1007/s11263-022-01588-7) and [**CODE**]()
 
 # Abstrarct
 

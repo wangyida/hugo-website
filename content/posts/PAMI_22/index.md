@@ -9,7 +9,7 @@ cover:
     alt: 'caption for image'
     caption: "cover image"
 ---
-| [paper](https://ieeexplore.ieee.org/document/9740011/) | [code](https://github.com/wangyida/nebula-anchors) |
+> Re-direct to the full [**PAPER**](https://ieeexplore.ieee.org/document/9740011/) and [**CODE**](https://github.com/wangyida/nebula-anchors)
 
 # Abstrarct
 
