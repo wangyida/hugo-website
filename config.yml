@@ -57,7 +57,7 @@ params:
     profileMode:
         enabled: false # needs to be explicitly set
         title: Yida WANG
-        subtitle: "I'm a Ph.D. student focused on computer vision and machine learning from [Technische Universität München](https://www.tum.de/)"
+        subtitle: "I'm a Ph.D. (Doktors der Naturwissenschaften) focusing on computer vision and machine learning from [Technische Universität München](https://www.tum.de/)"
         imageUrl: "Photo_home.jpg"
         imageWidth: 120
         imageHeight: 120
@@ -72,7 +72,7 @@ params:
     homeInfoParams:
         Title: "Yida WANG"
         Content: >
-          I'm a Ph.D. student focused on computer vision and machine learning from [Technische Universität München](https://www.tum.de/), with topic of deep learning techniques for representation and processing of 3D data. Projects have ever got sponsored by Microsoft, Google and Facebook Reality Labs, *e.g.* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj). [Presentation](/Presentation_Yida.pdf)
+          I'm a Ph.D. (Doktors der Naturwissenschaften) focusing on computer vision and machine learning from [Technische Universität München](https://www.tum.de/), with topic of deep learning techniques for representation and processing of 3D data. Projects have ever got sponsored by Microsoft, Google and Facebook Reality Labs, *e.g.* [tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) and [3D pose estimation](https://github.com/opencv/opencv_contrib/tree/master/modules/cnn_3dobj).
 
           > - **Download**: [My Resume](/resume_yida_en.pdf) or [中文简历](/resume_yida_cn.pdf)
 

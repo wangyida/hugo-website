@@ -597,6 +597,30 @@
   \end{tabular*}%
 }
 
+\newcommand*{\cvposition}[4]{%
+  \vspace{-2.mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 2.5cm} R{2.5cm}}
+    \ifempty{#2#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+  \end{tabular*}%
+}
+
+\newcommand*{\cvpositions}[4]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - .5cm} R{.5cm}}
+    \ifempty{#2#3}
+    {\entryauthorstyle{#1} & \entryauthorstyle{#3} \\}
+      {\entrytitlestyle{#2} & \\
+      \entryauthorstyle{#1} & \\} 
+\multicolumn{2}{L{\textwidth}}{\entrytitlestyle{#2}}
+  \end{tabular*}%
+}
+
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
