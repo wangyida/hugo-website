@@ -8,7 +8,7 @@ cover:
     image: "teasers/thesis_teaser_3dv18.png"
     alt: 'caption for image'
     caption: "cover image"
-slug: youtube
+slug: 3dv18
 ---
 > Re-direct to the full [**PAPER**](https://arxiv.org/pdf/1810.10901.pdf) and [**CODE**](https://github.com/wangyida/gan-depth-semantic3d) |
 
