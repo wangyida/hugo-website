@@ -8,6 +8,7 @@ cover:
     image: "teasers/thesis_teaser_pami22.png"
     alt: 'caption for image'
     caption: "cover image"
+slug: pami22
 ---
 > Re-direct to the full [**PAPER**](https://ieeexplore.ieee.org/document/9740011/) and [**CODE**](https://github.com/wangyida/nebula-anchors)
 

@@ -8,6 +8,7 @@ cover:
     image: "teasers/thesis_teaser_eccv20.png"
     alt: 'caption for image'
     caption: "completed bi-wings plane"
+slug: eccv20
 ---
 > Re-direct to the full [**PAPER**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123480069.pdf) and [**CODE**](https://github.com/wangyida/softpool) 
 

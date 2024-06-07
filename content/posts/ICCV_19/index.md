@@ -8,6 +8,7 @@ cover:
     image: "teasers/thesis_teaser_iccv19.png"
     alt: 'caption for image'
     caption: "semantic scene completion"
+slug: iccv19
 ---
 > Re-direct to the full [**PAPER**](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_ForkNet_Multi-Branch_Volumetric_Semantic_Completion_From_a_Single_Depth_Image_ICCV_2019_paper.pdf) and [**CODE**](https://github.com/wangyida/forknet)
 

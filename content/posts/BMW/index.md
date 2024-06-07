@@ -12,7 +12,7 @@ cover:
 
 | His first day |  |
 | :-: | :-- |
-![teaser](images/bmw_front.png#center) | Brandnew 2er delivered from BMW WELT München on 26th July, 2019. Details could be found in the [configurations document](/BMW_218i_Coupe_Yida.pdf). A brief summary is listed below as a reference.
+![teaser](images/bmw_front.png#center) | Brandnew 2er delivered from BMW WELT München on 26th July, 2019. A brief summary is listed below as a reference.
 
 
 ## Current status
@@ -42,6 +42,5 @@ If you are interested to be his second owner, please contact:
 
 ```
 Yida Wang
-+49 1781279929 / +86 13717978744
 yidawang.cn@gmail.com
 ```
